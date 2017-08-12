@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import d3 from 'd3';
-import { prop, sortBy, groupBy, indexBy, uniq } from 'ramda';
+import { prop, path, compose, sortBy, groupBy, indexBy, uniq } from 'ramda';
 import Maybe from 'folktale/maybe';
 
 import { colorScale } from '../constants';
@@ -9,6 +9,11 @@ import {
     getDistinctAssays
   , generateGridMap
 } from '../models';
+import {
+    selectCell
+  , selectRow
+  , selectColumn
+} from '../actions'
 
 /* Helper functions */
 
@@ -31,9 +36,15 @@ const mapStateToProps = state => ({
   , assayCategories:    state.data.assayCategories
   , cellTypes:          state.data.cellTypes
   , cellTypeCategories: state.data.cellTypeCategories
+  , selectedSets:       state.data.selectedSets
+  , gridMap:            state.data.gridMap
+  , distinctAssays:     state.data.distinctAssays
+  , selection:          state.selection
 })
 const mapDispatchToProps = dispatch => ({
-
+    selectCell:   compose(dispatch, selectCell)
+  , selectRow:    compose(dispatch, selectRow)
+  , selectColumn: compose(dispatch, selectColumn)
 })
 
 class Grid extends React.Component {
@@ -50,27 +61,43 @@ class Grid extends React.Component {
 
   render() {
     const {
-      data,
+      selectedSets,
+      gridMap,
+      distinctAssays,
       assays,
-      assayCategories,
-      cellTypes,
-      cellTypeCategories,
-      selected
+      selection,
+      selected,
+      selectCell,
+      selectRow,
+      selectColumn
     } = this.props
 
+    if (selectedSets.length === 0)
+      return (
+        <div className='Grid'>
+          <div className='Grid__empty'>
+            No datasets visible
+          </div>
+        </div>
+      )
 
-    const byCellType = generateGridMap(data)
-    console.log(byCellType)
+    console.log(gridMap)
 
-    const distinctAssays = getDistinctAssays(data)
     console.log(distinctAssays)
 
 
     const renderCell = (cellTypeId, assayId) => {
-      const sets = byCellType[cellTypeId][assayId]
+      const sets = gridMap[cellTypeId][assayId]
+      const isSelected = path([cellTypeId, assayId], selection)
+      const shouldHighlight = isSelected && sets !== undefined
+      const style = {
+        opacity:         shouldHighlight ? '1' : '0.4',
+        backgroundColor: getColorForSets(sets)
+      }
       return (
         <td
-            style={{ backgroundColor: getColorForSets(sets) }}
+            onClick={() => selectCell(cellTypeId, assayId)}
+            style={style}
         >
           { sets ? sets.length : '' }
         </td>
@@ -84,15 +111,20 @@ class Grid extends React.Component {
             <th></th>
             {
               distinctAssays.map(id =>
-                <th key={id}>{ assays[id].name }</th>)
+                <th key={id}
+                    onClick={() => selectColumn(id)} >
+                  { assays[id].name }
+                </th>)
             }
           </tr>
-          { Object.entries(byCellType).map(([cellTypeId, sets]) =>
+          { Object.entries(gridMap).map(([cellTypeId, sets]) =>
             <tr>
-              <td>{ this.getTextForCellTypeId(cellTypeId) }</td>
+              <td onClick={() => selectRow(cellTypeId)}>
+                { this.getTextForCellTypeId(cellTypeId) }
+              </td>
               {
-                distinctAssays.map(id =>
-                  renderCell(cellTypeId, id)
+                distinctAssays.map(assayId =>
+                  renderCell(cellTypeId, assayId)
                 )
               }
             </tr>

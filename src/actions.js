@@ -28,6 +28,10 @@ const createAction = (type, payload) => ({
 })
 
 export const DATA = createFetchActionNames('DATA')
+export const SET_FILTER = 'SET_FILTER'
+export const SET_FILTER_ALL = 'SET_FILTER_ALL'
+
+export const SELECT_OVERVIEW = 'SELECT_OVERVIEW'
 
 export const SELECT_CELL   = 'SELECT_CELL'
 export const SELECT_ROW    = 'SELECT_ROW'
@@ -98,8 +102,17 @@ export const fetchData = () => {
   }
 }
 
-export const selectCell = (assayId, cellTypeId) =>
-  createAction(SELECT_CELL, { assayId, cellTypeId })
+export const setFilter = (which, id, value) =>
+  createAction(SET_FILTER, { which, id, value })
+
+export const setFilterAll = (which, value) =>
+  createAction(SET_FILTER_ALL, { which, value })
+
+export const selectOverview = (overview) =>
+  createAction(SELECT_OVERVIEW, { overview })
+
+export const selectCell = (cellTypeId, assayId, value) =>
+  createAction(SELECT_CELL, { assayId, cellTypeId, value })
 
 export const selectRow = (cellTypeId) =>
   createAction(SELECT_ROW, { cellTypeId })

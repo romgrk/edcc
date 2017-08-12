@@ -48,12 +48,48 @@ export const getDistinctAssays = sets =>
   uniq(sortBy(prop('assay_category'), sets).map(d => d.assay))
 
 // Generate a map of sets by assay by cellType
-export const generateGridMap = data =>
-  Object.entries(groupBy(prop('cell_type'), data)).reduce((acc, [key, sets]) => {
-    acc[key] = groupBy(prop('assay'), sets)
+export const generateGridMap = sets =>
+  Object.entries(groupBy(prop('cell_type'), sets)).reduce((acc, [key, groupedSets]) => {
+    acc[key] = groupBy(prop('assay'), groupedSets)
     return acc
   }, {})
 
+// Returns the list of selected sets
+export const getSelectedSets = data => {
+  const {
+    datasets,
+    institutions,
+    assays,
+    assayCategories,
+    cellTypes,
+    cellTypeCategories,
+  } = data
+
+  return Object.values(datasets).filter(set => {
+    if (!institutions[set.institution].selected)
+      return false
+
+    const cellTypeCategoryId = set.cell_type_category
+    const isCellTypeCategorySelected =
+      Maybe.fromNullable(prop(cellTypeCategoryId, cellTypeCategories))
+      .map(prop('selected'))
+      .getOrElse(false)
+
+    if (!isCellTypeCategorySelected)
+      return false
+
+    const assayCategoryId = set.assay_category
+    const isAssayCategorySelected =
+      Maybe.fromNullable(prop(assayCategoryId, assayCategories))
+      .map(prop('selected'))
+      .getOrElse(false)
+
+    if (!isAssayCategorySelected)
+      return false
+
+    return true
+  })
+}
 
 export function asBooleanMap(data, key) {
   return data.reduce((acc, cur) => {

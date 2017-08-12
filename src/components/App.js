@@ -9,25 +9,13 @@ import Overview from './Overview';
 import Grid from './Grid';
 import { asBooleanMap, indexBy, prepare, selectionMapFrom } from '../models';
 import { overviewOptions } from '../constants';
-
-import cellTypesData from '../data/cellTypes.json';
-import assaysData from '../data/assays.json';
-import institutionsData from '../data/institutions.json';
-import datasetsData from '../data/datasets.json';
-
-
+import {
+  setFilter,
+  setFilterAll
+} from '../actions';
 
 
 const isSelected = prop('selected')
-
-const countByKey = (xs, key) =>
-  xs.reduce((acc, cur) => {
-    if (cur[key] in acc)
-      acc[cur[key]] += 1
-    else
-      acc[cur[key]] = 1
-    return acc
-  }, {})
 
 
 /* App */
@@ -47,7 +35,8 @@ const mapStateToProps = state => ({
   otherSettings:      state.data.otherSettings,
 })
 const mapDispatchToProps = dispatch => ({
-
+  setFilter: compose(dispatch, setFilter),
+  setFilterAll: compose(dispatch, setFilterAll)
 })
 
 class App extends Component {
@@ -66,7 +55,7 @@ class App extends Component {
       assays,
       assayCategories,
       cellTypes,
-      cellTypeCategories
+      cellTypeCategories,
     } = this.props
 
     return Object.values(datasets).filter(set => {
@@ -97,7 +86,12 @@ class App extends Component {
 
   render() {
 
-    const { isLoading, hasData } = this.props
+    const {
+      isLoading,
+      hasData,
+      setFilter,
+      setFilterAll,
+    } = this.props
 
     if (isLoading || !hasData) {
       return (
@@ -118,22 +112,15 @@ class App extends Component {
 
     const toggleValueHandler = key =>
       (id, value) =>
-        this.setState(state =>
-          ({ [key]:
-            Object.assign(state[key], { [id]:
-              Object.assign(state[key][id], { selected: value }) }) }))
+        setFilter(key, id, value)
+
+    const toggleAllHandler = key =>
+      value =>
+        setFilterAll(key, value)
 
     const togglePanelHandler = key =>
       value => this.setState({ visiblePanel: value ? key : '' })
 
-    const toggleAllHandler = key =>
-      value =>
-        this.setState(state => ({ [key]:
-          Object.entries(state[key]).reduce((acc, [optionName, option]) => {
-            option.selected = value
-            acc[optionName] = option
-            return acc
-          }, {})}))
 
     const onChangeOverview = option =>
       this.setState({ selectedOverview: option })
@@ -152,14 +139,8 @@ class App extends Component {
     const { selectedOverview } = this.state
     const overviewKey = selectedOverview.value
 
-    const selectedSets = this.getSelectedSets()
-    console.log(selectedSets)
-
-    const dataByKey = countByKey(selectedSets, overviewKey)
-
-    const overviewData =
-      Object.entries(dataByKey).reduce((acc, [label, value]) =>
-        acc.concat({ label, value }), [])
+    //const selectedSets = this.getSelectedSets()
+    //console.log(selectedSets)
 
     return (
       <div className='App'>
@@ -173,7 +154,7 @@ class App extends Component {
             </div>
           }
           { !isLoading &&
-            <Grid data={selectedSets} />
+            <Grid />
           }
         </div>
         <div className='App__right'>
@@ -185,7 +166,7 @@ class App extends Component {
           { createList('Other Settings', 'otherSettings', 'label') }
           <hr/>
           <Overview
-            data={overviewData}
+            key={overviewKey}
             selected={selectedOverview.label}
             onChange={onChangeOverview}
           />

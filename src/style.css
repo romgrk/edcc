@@ -138,6 +138,16 @@ button:disabled {
   padding: var(--default-pading);
   position: relative;
 }
+.Grid__empty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  opacity: 0.4;
+  text-align: center;
+}
 .Grid table {
   position: absolute;
   left: 50%;

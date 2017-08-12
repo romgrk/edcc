@@ -6,7 +6,7 @@ export const colorScale = scaleOrdinal()
   .range(schemeCategory20b)
 
 export const overviewOptions = [
-  { label: 'Institutions', value: 'institution' },
-  { label: 'Cell Type', value: 'cell_type_category' },
-  { label: 'Assays', value: 'assay_category' },
+  { label: 'Institutions', key: 'institution' },
+  { label: 'Cell Type', key: 'cell_type_category' },
+  { label: 'Assays', key: 'assay_category' },
 ]
