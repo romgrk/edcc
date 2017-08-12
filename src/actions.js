@@ -29,6 +29,10 @@ const createAction = (type, payload) => ({
 
 export const DATA = createFetchActionNames('DATA')
 
+export const SELECT_CELL   = 'SELECT_CELL'
+export const SELECT_ROW    = 'SELECT_ROW'
+export const SELECT_COLUMN = 'SELECT_COLUMN'
+
 export const fetchData = () => {
   return (dispatch, getState) => {
     const { data } = getState()
@@ -68,13 +72,13 @@ export const fetchData = () => {
         { id: 3, label: 'Non-core assays' }
       ])
 
-      const datasets = tagDatasets(datasetsData.dataset, cellTypes, assays)
+      const epirrIds = selectionMapFrom(datasetsData.dataset, 'epirr_id')
+
+      const donorIds = selectionMapFrom(datasetsData.dataset, 'donorID')
+
+      const datasets = prepare(tagDatasets(datasetsData.dataset, cellTypes, assays))
 
       console.log(datasets)
-
-      const epirrIds = selectionMapFrom(datasets, 'epirr_id')
-
-      const donorIds = selectionMapFrom(datasets, 'donorID')
 
       dispatch(createAction(DATA.RECEIVE, {
         cellTypes,
@@ -93,3 +97,12 @@ export const fetchData = () => {
     })
   }
 }
+
+export const selectCell = (assayId, cellTypeId) =>
+  createAction(SELECT_CELL, { assayId, cellTypeId })
+
+export const selectRow = (cellTypeId) =>
+  createAction(SELECT_ROW, { cellTypeId })
+
+export const selectColumn = (assayId) =>
+  createAction(SELECT_COLUMN, { assayId })

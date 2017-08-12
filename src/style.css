@@ -2,8 +2,9 @@
 
 html, body, #root, .App {
   --transition: all .15s;
-  --bg-light: #33393b;
   --bg-dark: #232729;
+  --bg-light: #33393b;
+  --bg-hover: rgba(255, 255, 255, 0.05);
   --fg-light: #ddd;
   --border: #1b1f20;
   --default-pading: 1em;
@@ -147,6 +148,9 @@ button:disabled {
   max-width: 1em;
   height: 100px;
   transform: rotate(-70deg) translate(-40px, 10px);
+}
+.Grid tr {
+  background-color: var(--bg-hover);
 }
 .Grid td {
   vertical-align: middle;

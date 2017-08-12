@@ -17,45 +17,6 @@ import datasetsData from '../data/datasets.json';
 
 
 
-/* Data parsing/processing */
-
-const cellTypes          = prepare(cellTypesData.cell_type)
-const cellTypeCategories = prepare(cellTypesData.cell_type_category)
-
-const assays          = prepare(assaysData.assay)
-const assayCategories = prepare(assaysData.assay_category)
-
-const institutions = prepare(institutionsData.institution)
-
-const otherSettings = prepare([
-  { id: 1, label: 'Non-registered' },
-  { id: 2, label: 'Partial epigenomes' },
-  { id: 3, label: 'Non-core assays' }
-])
-
-
-const datasets = datasetsData.dataset
-  .map(set => {
-    set.cell_type_category =
-      Maybe.fromNullable(cellTypes[set.cell_type])
-           .map(prop('cell_type_category'))
-           .getOrElse(null)
-
-    set.assay_category =
-      Maybe.fromNullable(assays[set.assay])
-           .map(prop('assay_category'))
-           .getOrElse(null)
-
-    return set
-  })
-
-console.log(datasets)
-
-
-const epirrIds = selectionMapFrom(datasets, 'epirr_id')
-
-const donorIds = selectionMapFrom(datasets, 'donorID')
-
 
 const isSelected = prop('selected')
 
@@ -72,7 +33,18 @@ const countByKey = (xs, key) =>
 /* App */
 
 const mapStateToProps = state => ({
-  isLoading: state.data.isLoading
+  isLoading:          state.data.isLoading,
+  hasData:            state.data.hasData,
+  datasets:           state.data.datasets,
+  donorIds:           state.data.donorIds,
+  epirrIds:           state.data.epirrIds,
+  assays:             state.data.assays,
+  assayCategories:    state.data.assayCategories,
+  cellTypes:          state.data.cellTypes,
+  cellTypeCategories: state.data.cellTypeCategories,
+  assayCategories:    state.data.assayCategories,
+  institutions:       state.data.institutions,
+  otherSettings:      state.data.otherSettings,
 })
 const mapDispatchToProps = dispatch => ({
 
@@ -84,18 +56,6 @@ class App extends Component {
     this.state = {
       visiblePanel: undefined,
       selectedOverview: overviewOptions[0],
-
-      donorIds:           donorIds,
-      epirrIds:           epirrIds,
-      assays:             assays,
-      assayCategories:    assayCategories,
-      cellTypes:          cellTypes,
-      cellTypeCategories: cellTypeCategories,
-      assayCategories:    assayCategories,
-      institutions:       institutions,
-      otherSettings:      otherSettings,
-
-      datasets: datasets
     };
   }
 
@@ -107,9 +67,9 @@ class App extends Component {
       assayCategories,
       cellTypes,
       cellTypeCategories
-    } = this.state
+    } = this.props
 
-    return datasets.filter(set => {
+    return Object.values(datasets).filter(set => {
       if (!institutions[set.institution].selected)
         return false
 
@@ -135,13 +95,26 @@ class App extends Component {
     })
   }
 
-  getSortedSets() {
-    return this.getSelectedSets()
-  }
-
   render() {
 
-    const { isLoading } = this.props
+    const { isLoading, hasData } = this.props
+
+    if (isLoading || !hasData) {
+      return (
+        <div className='App'>
+          <div className='App__left'>
+            <div className='App__loading'>
+              <div className='spinner'/>
+              <div>
+                Loading data
+              </div>
+            </div>
+          </div>
+          <div className='App__right'>
+          </div>
+        </div>
+      );
+    }
 
     const toggleValueHandler = key =>
       (id, value) =>
@@ -156,9 +129,9 @@ class App extends Component {
     const toggleAllHandler = key =>
       value =>
         this.setState(state => ({ [key]:
-          Object.entries(state[key]).reduce((acc, cur) => {
-            cur[1].selected = value
-            acc[cur[0]] = cur[1]
+          Object.entries(state[key]).reduce((acc, [optionName, option]) => {
+            option.selected = value
+            acc[optionName] = option
             return acc
           }, {})}))
 
@@ -169,7 +142,7 @@ class App extends Component {
       <List
         title={title}
         folded={this.state.visiblePanel !== key}
-        data={this.state[key]}
+        data={this.props[key]}
         labelBy={labelBy}
         onChange={toggleValueHandler(key)}
         onToggle={togglePanelHandler(key)}
@@ -179,22 +152,14 @@ class App extends Component {
     const { selectedOverview } = this.state
     const overviewKey = selectedOverview.value
 
-    const datasets = this.getSelectedSets()
-    console.log(datasets)
+    const selectedSets = this.getSelectedSets()
+    console.log(selectedSets)
 
-    const dataByKey = countByKey(datasets, overviewKey)
+    const dataByKey = countByKey(selectedSets, overviewKey)
 
     const overviewData =
       Object.entries(dataByKey).reduce((acc, [label, value]) =>
         acc.concat({ label, value }), [])
-
-    const selectedAssays =
-      Object.values(this.state.assays)
-        .filter(assay => assayCategories[assay.assay_category].selected)
-
-    const selectedAssayCategories =
-      Object.values(this.state.assayCategories)
-        .filter(isSelected)
 
     return (
       <div className='App'>
@@ -208,12 +173,7 @@ class App extends Component {
             </div>
           }
           { !isLoading &&
-            <Grid
-            data={datasets}
-            assays={this.state.assays}
-            assayCategories={assayCategories}
-            cellTypes={this.state.cellTypes}
-            cellTypeCategories={this.state.cellTypeCategories} />
+            <Grid data={selectedSets} />
           }
         </div>
         <div className='App__right'>
@@ -235,11 +195,6 @@ class App extends Component {
   }
 }
 
-function cellText(cellTypeId) {
-  const cellType = cellTypes[cellTypeId]
-  const cellTypeCategory = cellTypeCategories[cellType.cell_type_category]
-  return `${cellType.name} - ${cellTypeCategory.name}`
-}
 
 export default connect(
   mapStateToProps,

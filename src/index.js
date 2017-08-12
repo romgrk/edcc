@@ -19,9 +19,9 @@ import App from './components/App';
 let store
 let initialState = {}
 
-if (process.env.NODE_ENV === 'production')
-  store = createStore(rootReducer, initialState, applyMiddleware(thunkMiddleware))
-else
+//if (process.env.NODE_ENV === 'production')
+  //store = createStore(rootReducer, initialState, applyMiddleware(thunkMiddleware))
+//else
   store = createStore(
     rootReducer, initialState,
     compose(applyMiddleware(thunkMiddleware, createLogger()),

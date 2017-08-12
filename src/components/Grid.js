@@ -5,42 +5,32 @@ import { prop, sortBy, groupBy, indexBy, uniq } from 'ramda';
 import Maybe from 'folktale/maybe';
 
 import { colorScale } from '../constants';
+import {
+    getDistinctAssays
+  , generateGridMap
+} from '../models';
 
 /* Helper functions */
 
 const sortByCellType = sortBy(prop('cell_type'))
 
 
-const groupByCellType = (xs) =>
-  Object.entries(groupBy(prop('cell_type'), xs))
-        .map(([cell_type, sets]) => ({ cell_type, sets }))
-
-const indexByAssayCategory = xs =>
-  Object.entries(groupBy(prop('assay_category'), xs))
-        .reduce((acc, [key, value]) => {
-          if (!acc[key])
-            acc[key] = []
-          acc[key].push(value)
-          return acc
-        }, {})
-
-const getOrElse = (object, key, value) =>
-  Maybe.fromNullable(object)
-       .map(o => o[key])
-       .getOrElse(value)
-
 
 const getColorForSets = sets => {
   if (!sets)
-    return 'grey'
+    return 'transparent'
   const institutions = uniq(sets.map(s => s.institution))
   if (institutions.length === 1)
     return colorScale(institutions[0])
   return 'white'
 }
 
-const mapStateToProps = state => ({
 
+const mapStateToProps = state => ({
+    assays:             state.data.assays
+  , assayCategories:    state.data.assayCategories
+  , cellTypes:          state.data.cellTypes
+  , cellTypeCategories: state.data.cellTypeCategories
 })
 const mapDispatchToProps = dispatch => ({
 
@@ -69,20 +59,20 @@ class Grid extends React.Component {
     } = this.props
 
 
-    const byCellType = Object.entries(groupBy(prop('cell_type'), data)).reduce((acc, [key, sets]) => {
-      acc[key] = groupBy(prop('assay'), sets)
-      return acc
-    }, {})
+    const byCellType = generateGridMap(data)
     console.log(byCellType)
 
-    const distinctAssays = uniq(sortBy(prop('assay_category'), data).map(d => d.assay))
+    const distinctAssays = getDistinctAssays(data)
     console.log(distinctAssays)
+
 
     const renderCell = (cellTypeId, assayId) => {
       const sets = byCellType[cellTypeId][assayId]
       return (
-        <td style={{ backgroundColor: getColorForSets(sets) }}>
-          { getOrElse(sets, 'length', '') }
+        <td
+            style={{ backgroundColor: getColorForSets(sets) }}
+        >
+          { sets ? sets.length : '' }
         </td>
       )
     }

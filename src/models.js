@@ -6,7 +6,8 @@ import {
   prop,
   path,
   sortBy,
-  groupBy
+  groupBy,
+  uniq
 } from 'ramda';
 
 const DEFAULT_SELECTION_VALUE = true
@@ -41,6 +42,17 @@ export const tagDatasets = (datasets, cellTypes, assays) =>
 
     return set
   })
+
+// Returns an array of unique assays in the provided sets
+export const getDistinctAssays = sets =>
+  uniq(sortBy(prop('assay_category'), sets).map(d => d.assay))
+
+// Generate a map of sets by assay by cellType
+export const generateGridMap = data =>
+  Object.entries(groupBy(prop('cell_type'), data)).reduce((acc, [key, sets]) => {
+    acc[key] = groupBy(prop('assay'), sets)
+    return acc
+  }, {})
 
 
 export function asBooleanMap(data, key) {

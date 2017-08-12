@@ -17,13 +17,13 @@ function uiReducer(state = {}, action) {
 function dataReducer(state = {}, action) {
   switch(action.type) {
     case DATA.REQUEST: {
-      return { isLoading: true }
+      return { hasData: false, isLoading: true }
     }
     case DATA.RECEIVE: {
-      return { isLoading: false, ...action.payload }
+      return { hasData: true, isLoading: false, ...action.payload }
     }
     case DATA.ERROR: {
-      return { isLoading: false }
+      return { hasData: false, isLoading: false }
     }
     default: return state;
   }
