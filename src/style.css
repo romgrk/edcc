@@ -1,0 +1,473 @@
+@import './spinner.css';
+
+html, body, #root, .App {
+  --transition: all .15s;
+  --bg-light: #33393b;
+  --bg-dark: #232729;
+  --fg-light: #ddd;
+  --border: #1b1f20;
+  --default-pading: 1em;
+
+  color: #ddd;
+  /*color: #eeeeec;*/
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, p {
+  font-family: Lato;
+}
+
+hr, .separator {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  min-width: 1px;
+  min-height: 1px;
+}
+
+
+.activatable.has-open-popup,
+.activatable:hover {
+  background-color: rgba(238, 238, 236, 0.05);
+}
+.activatable:active {
+  box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.activatable.unfocused:hover {
+  background-color: transparent;
+}
+.activatable.selected:active {
+  box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5);
+}
+.activatable.selected.has-open-popup,
+.activatable.selected:hover {
+  background-color: #356ca4;
+}
+.activatable.selected.unfocused {
+  background-color: #215d9c;
+}
+
+button {
+  margin: -1px;
+  min-width: 44px;
+  min-height: 26px;
+  border: 1px solid;
+  border-radius: 3px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #eeeeec;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: #0b0c0c;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.827451);
+  background-image: linear-gradient(to bottom, #2c3133 20%, #25292b 90%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05),
+              inset 0 -2px #2a2e30,
+              inset 0 -1px #1e2122,
+              0 1px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  color: #eeeeec;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: #0b0c0c;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -2px #2c3133, inset 0 -1px #25292b, 0 1px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, #33393b 20%, #2a2e30 90%);
+}
+button:active {
+  color: #eeeeec;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: #0b0c0c;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -2px #2c3133, inset 0 -1px #25292b, 0 1px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, #33393b 20%, #2a2e30 90%);
+}
+button:focus {
+  outline-color: rgba(238, 238, 236, 0.05);
+}
+button:disabled {
+  color: #919494;
+  border-color: #1b1f20;
+  background-image: image(#2d3234);
+  text-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+
+/********************* App * */
+
+.App {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.App__left {
+  flex: 1 1;
+  overflow: hidden;
+  background-color: var(--bg-light);
+  position: relative;
+}
+.App__loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 0 1px #222;
+  text-align: center;
+}
+.App__right {
+  flex: 0 0 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--bg-dark);
+}
+
+.Grid {
+  height: 100%;
+  overflow: scroll;
+  padding: var(--default-pading);
+  position: relative;
+}
+.Grid table {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.Grid tr:first-of-type th {
+  white-space: nowrap;
+  max-width: 1em;
+  height: 100px;
+  transform: rotate(-70deg) translate(-40px, 10px);
+}
+.Grid td {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.Grid td:first-of-type {
+  max-width: 200px;
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Grid td:not(:first-of-type) {
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+.Grid td:not(:first-of-type):hover::before {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Overview > * {
+  padding: var(--default-pading);
+}
+.Overview__content {
+  background: var(--bg-light);
+}
+
+.List {
+  border: 1px solid var(--border);
+  background-color: var(--bg-dark);
+}
+.List:not(:last-of-type) {
+  border-bottom: none;
+}
+.List > * {
+  padding: var(--default-pading);
+}
+
+.title {
+  position: relative;
+  font-weight: bold;
+  padding-left: calc(1em + 20px);
+  transition: var(--transition);
+}
+.title.--clickable {
+  cursor: pointer;
+}
+.title.--clickable:hover {
+  background-color: rgba(238, 238, 236, 0.05);
+}
+
+.List .title::before {
+  content:"\A";
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #eee;
+  position: absolute;
+  left: 15px;
+  top: calc(50% - 5px);
+  transition: all .2s;
+  transform: rotateZ(90deg);
+}
+
+.List.folded .title::before {
+  transform: rotateZ(0deg);
+}
+
+ul {
+  background-color: var(--bg-light);
+  margin: 0;
+  list-style: none;
+  transition: all .2s;
+}
+ul.folded {
+  height: 0;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.list-header {
+  position: relative;
+}
+.list-header::after {
+  content: '\A';
+  position: absolute;
+  display: block;
+  left: 35px;
+  top: 100%;
+  width: calc(100% - 35px);
+  border-bottom: 1px dashed grey;
+}
+
+
+.DropDown {
+  position: relative;
+}
+.DropDown__label {
+  padding: 0.5em 1em;
+  display: inline-block;
+  min-width: 200px;
+  font-weight: bold;
+  /*background: var(--bg-light);*/
+  /*border: 1px solid var(--border);*/
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .15s;
+  /*box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);*/
+}
+.DropDown__label:hover {
+  /*background-color: #555;*/
+}
+
+.DropDown__content {
+  padding: 0.5em 1em;
+  min-width: 200px;
+  top: calc(100% + 0.75em);
+  position: absolute;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all .1s;
+  box-shadow: inset 0 -2px #2a2e30,
+              inset 0 -1px #1e2122,
+              0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+.DropDown.visible .DropDown__content {
+  transform: translateY(0);
+  opacity: 1;
+}
+.DropDown:not(.visible) .DropDown__content {
+  animation: .1s hide;
+  pointer-events: none;
+}
+@keyframes hide {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+.DropDown__content:after, .DropDown__content:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.DropDown__content:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: var(--bg-light);
+  border-width: 10px;
+  margin-left: -10px;
+}
+.DropDown__content:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #222;
+  border-width: 11px;
+  margin-left: -11px;
+}
+.DropDown__item {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .15s;
+}
+.DropDown__item:hover {
+  background-color: rgba(238, 238, 236, 0.05);
+}
+.DropDown__item:focus {
+  box-sizing: content-box;
+  background-color: #555;
+  outline: none;
+  position: relative;
+}
+.DropDown__item:focus::before {
+  content: '\A';
+  position: absolute;
+  box-sizing: content-box;
+  width:  calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 0;
+  left: 0;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+
+/********************* App Notifications * */
+
+.app-notification,
+.app-notification.frame {
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(28, 31, 32, 0.7);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 2px);
+  background-clip: padding-box;
+}
+.app-notification,
+.app-notification.frame {
+  background-color: rgba(28, 31, 32, 0.7);
+  background-clip: padding-box;
+  text-shadow: 0 1px black;
+}
+
+
+/********************* CheckBox * */
+
+/* Remove default checkbox */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+label {
+  position: relative;
+  box-sizing: content-box;
+  padding: 5px 0 5px 35px;
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  user-select: none;
+  transition: all .2s ease-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+label:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+label:before,
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  border: 2px solid var(--fg-light);
+  border-radius: 1px;
+  margin-top: 2px;
+  transition: .2s;
+}
+
+label:after {
+  border: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+label.not-checked.disabled:before {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+label.checked:before {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #26a69a;
+  border-bottom: 2px solid #26a69a;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+label.checked.disabled:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+}
+
+/* Indeterminate checkbox */
+label.indeterminate:before {
+  top: -5px;
+  left: -12px;
+  width: 10px;
+  height: 22px;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #26a69a;
+  border-bottom: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+label.indeterminate.disabled:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+

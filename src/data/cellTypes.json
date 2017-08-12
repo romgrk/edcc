@@ -1,0 +1,5231 @@
+{
+"cell_type_category": [
+
+	{
+	    "id": 12,
+	    "name": "Adrenal"
+	}
+	,
+	{
+	    "id": 1,
+	    "name": "Blood"
+	}
+	,
+	{
+	    "id": 4,
+	    "name": "Bone"
+	}
+	,
+	{
+	    "id": 10,
+	    "name": "Bone Marrow"
+	}
+	,
+	{
+	    "id": 2,
+	    "name": "Brain"
+	}
+	,
+	{
+	    "id": 6,
+	    "name": "Breast"
+	}
+	,
+	{
+	    "id": 9,
+	    "name": "Cell Line"
+	}
+	,
+	{
+	    "id": 16,
+	    "name": "Endothelia"
+	}
+	,
+	{
+	    "id": 17,
+	    "name": "Epithelial"
+	}
+	,
+	{
+	    "id": 13,
+	    "name": "ES Cells"
+	}
+	,
+	{
+	    "id": 14,
+	    "name": "ES-derived cells"
+	}
+	,
+	{
+	    "id": 15,
+	    "name": "Eye"
+	}
+	,
+	{
+	    "id": 18,
+	    "name": "Fat"
+	}
+	,
+	{
+	    "id": 32,
+	    "name": "forelimb/hindlimb"
+	}
+	,
+	{
+	    "id": 19,
+	    "name": "Gastrointestinal"
+	}
+	,
+	{
+	    "id": 20,
+	    "name": "Genitourinary"
+	}
+	,
+	{
+	    "id": 21,
+	    "name": "Heart"
+	}
+	,
+	{
+	    "id": 22,
+	    "name": "Hematopoietic Stem"
+	}
+	,
+	{
+	    "id": 29,
+	    "name": "iPS Cells"
+	}
+	,
+	{
+	    "id": 7,
+	    "name": "Kidney"
+	}
+	,
+	{
+	    "id": 23,
+	    "name": "Liver"
+	}
+	,
+	{
+	    "id": 8,
+	    "name": "Lung"
+	}
+	,
+	{
+	    "id": 3,
+	    "name": "Muscle"
+	}
+	,
+	{
+	    "id": 5,
+	    "name": "Other"
+	}
+	,
+	{
+	    "id": 33,
+	    "name": "Pancreas"
+	}
+	,
+	{
+	    "id": 24,
+	    "name": "Placenta"
+	}
+	,
+	{
+	    "id": 31,
+	    "name": "Primary Cell"
+	}
+	,
+	{
+	    "id": 25,
+	    "name": "Skin"
+	}
+	,
+	{
+	    "id": 26,
+	    "name": "Spleen"
+	}
+	,
+	{
+	    "id": 27,
+	    "name": "Stromal"
+	}
+	,
+	{
+	    "id": 28,
+	    "name": "Thymus"
+	}
+	,
+	{
+	    "id": 30,
+	    "name": "Thyroid"
+	}
+	,
+	{
+	    "id": 11,
+	    "name": "Tonsil"
+	}
+	
+],
+"cell_type": [
+
+	{
+	    "id": 1,
+	    "name": "monocyte",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 2,
+	    "name": "Brain Tumor",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 3,
+	    "name": "T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 4,
+	    "name": "Skeletal Muscle (Mitochodrial Disease)",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 5,
+	    "name": "Skeletal Muscle (Control)",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 6,
+	    "name": "Brain",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 296,
+	    "name": "GM12878",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 297,
+	    "name": "H1hESC",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 298,
+	    "name": "HeLaS3",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 299,
+	    "name": "HepG2",
+	    "cell_type_category": 23
+	}
+	,
+	{
+	    "id": 300,
+	    "name": "HMEC",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 301,
+	    "name": "HSMM",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 302,
+	    "name": "HSMMtube",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 303,
+	    "name": "HUVEC",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 304,
+	    "name": "K562",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 305,
+	    "name": "NHA",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 306,
+	    "name": "NHDFAd",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 307,
+	    "name": "NHEK",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 308,
+	    "name": "NHLF",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 309,
+	    "name": "Osteobl",
+	    "cell_type_category": 4
+	}
+	,
+	{
+	    "id": 310,
+	    "name": "NT2D1",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 311,
+	    "name": "U2OS",
+	    "cell_type_category": 4
+	}
+	,
+	{
+	    "id": 312,
+	    "name": "AG04449",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 313,
+	    "name": "AG04450",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 314,
+	    "name": "AG09309",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 315,
+	    "name": "AG09319",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 316,
+	    "name": "AG10803",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 317,
+	    "name": "AoAF",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 318,
+	    "name": "BJ",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 319,
+	    "name": "Caco2",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 320,
+	    "name": "GM06990",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 321,
+	    "name": "H7hESC",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 322,
+	    "name": "HAsp",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 323,
+	    "name": "HBMEC",
+	    "cell_type_category": 16
+	}
+	,
+	{
+	    "id": 324,
+	    "name": "HCF",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 325,
+	    "name": "HCM",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 326,
+	    "name": "HCPEpiC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 327,
+	    "name": "HCT116",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 328,
+	    "name": "HEEpiC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 329,
+	    "name": "HEK293",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 330,
+	    "name": "HL60",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 331,
+	    "name": "HMF",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 332,
+	    "name": "HPAF",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 333,
+	    "name": "HPF",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 334,
+	    "name": "HRE",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 335,
+	    "name": "HRPEpiC",
+	    "cell_type_category": 15
+	}
+	,
+	{
+	    "id": 336,
+	    "name": "HVMF",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 337,
+	    "name": "Jurkat",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 338,
+	    "name": "NHDFneo",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 339,
+	    "name": "SAEC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 340,
+	    "name": "SKNSHRA",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 341,
+	    "name": "HCFaa",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 342,
+	    "name": "MCF7",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 343,
+	    "name": "NB4",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 344,
+	    "name": "A549",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 345,
+	    "name": "Prostate",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 346,
+	    "name": "Macrophage_M1",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 347,
+	    "name": "Neutrophils",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 348,
+	    "name": "CD4+_naive",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 349,
+	    "name": "CD8+_naive",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 350,
+	    "name": "Mammary Gland",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 351,
+	    "name": "Peripheral Blood",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 352,
+	    "name": "Th0",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 353,
+	    "name": "BE2C",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 354,
+	    "name": "MonocytesCD14RO01746",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 355,
+	    "name": "CD20",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 356,
+	    "name": "CD34Mobilized",
+	    "cell_type_category": 22
+	}
+	,
+	{
+	    "id": 357,
+	    "name": "CMK",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 358,
+	    "name": "HSMMemb",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 359,
+	    "name": "GM12864",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 360,
+	    "name": "GM12865",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 361,
+	    "name": "HAc",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 362,
+	    "name": "HAEpiC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 363,
+	    "name": "HAh",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 364,
+	    "name": "HConF",
+	    "cell_type_category": 15
+	}
+	,
+	{
+	    "id": 365,
+	    "name": "HFF",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 366,
+	    "name": "HFFMyc",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 367,
+	    "name": "HGF",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 368,
+	    "name": "HIPEpiC",
+	    "cell_type_category": 15
+	}
+	,
+	{
+	    "id": 369,
+	    "name": "HMVECdAd",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 370,
+	    "name": "HMVECdBlAd",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 371,
+	    "name": "HMVECdBlNeo",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 372,
+	    "name": "HMVECdLyAd",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 373,
+	    "name": "HMVECdLyNeo",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 374,
+	    "name": "HMVECdNeo",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 375,
+	    "name": "HMVECLBl",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 376,
+	    "name": "HMVECLLy",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 377,
+	    "name": "HNPCEpiC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 378,
+	    "name": "HPAEC",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 379,
+	    "name": "HPdLF",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 380,
+	    "name": "HRCEpiC",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 381,
+	    "name": "HRGEC",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 382,
+	    "name": "Th1",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 383,
+	    "name": "Th2",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 384,
+	    "name": "Ishikawa",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 385,
+	    "name": "LNCaP",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 386,
+	    "name": "PANC1",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 387,
+	    "name": "PrEC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 388,
+	    "name": "RPTEC",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 389,
+	    "name": "RWPE1",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 390,
+	    "name": "SkMC",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 391,
+	    "name": "SKNMC",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 392,
+	    "name": "WERIRb1",
+	    "cell_type_category": 15
+	}
+	,
+	{
+	    "id": 393,
+	    "name": "T8988T",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 394,
+	    "name": "AoSMC",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 395,
+	    "name": "Chorion",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 396,
+	    "name": "CLL",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 397,
+	    "name": "Fibrobl",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 398,
+	    "name": "FibroP",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 399,
+	    "name": "Gliobla",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 400,
+	    "name": "GM12891",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 401,
+	    "name": "GM12892",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 402,
+	    "name": "GM18507",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 403,
+	    "name": "GM19238",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 404,
+	    "name": "GM19239",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 405,
+	    "name": "GM19240",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 406,
+	    "name": "H9ES",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 407,
+	    "name": "Hepatocytes",
+	    "cell_type_category": 23
+	}
+	,
+	{
+	    "id": 408,
+	    "name": "HPDE6E6E7",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 409,
+	    "name": "HTR8svn",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 410,
+	    "name": "Huh75",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 411,
+	    "name": "Huh7",
+	    "cell_type_category": 23
+	}
+	,
+	{
+	    "id": 412,
+	    "name": "iPS",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 413,
+	    "name": "Medullo",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 414,
+	    "name": "Melano",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 415,
+	    "name": "Myometr",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 416,
+	    "name": "PanIsletD",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 417,
+	    "name": "PanIslets",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 418,
+	    "name": "pHTE",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 419,
+	    "name": "ProgFib",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 420,
+	    "name": "Stellate",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 421,
+	    "name": "T47D",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 422,
+	    "name": "Urothelia",
+	    "cell_type_category": 20
+	}
+	,
+	{
+	    "id": 423,
+	    "name": "WI38",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 424,
+	    "name": "H1",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 425,
+	    "name": "IMR90",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 426,
+	    "name": "H9",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 427,
+	    "name": "H1DMSC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 428,
+	    "name": "H1DNPCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 429,
+	    "name": "H1_BMP4_Derived_Trophoblast_Cultured_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 430,
+	    "name": "H1_BMP4_Mesendoderm",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 431,
+	    "name": "BAC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 432,
+	    "name": "CD4N",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 433,
+	    "name": "iPS20b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 434,
+	    "name": "CD4+CD25-M",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 435,
+	    "name": "MCD34",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 436,
+	    "name": "CD8M",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 437,
+	    "name": "CD4+CD25-MACS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 438,
+	    "name": "DSM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 439,
+	    "name": "CD8N",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 440,
+	    "name": "CD4M",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 441,
+	    "name": "CD4+CD25-Th17",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 442,
+	    "name": "BITL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 443,
+	    "name": "CD4+CD25-N",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 444,
+	    "name": "BAG",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 445,
+	    "name": "BHM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 446,
+	    "name": "iPS18a",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 447,
+	    "name": "BCG",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 448,
+	    "name": "BMFL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 449,
+	    "name": "CD4+_CD25int_CD127+_Tmem_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 450,
+	    "name": "iPS_DF_19_11",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 451,
+	    "name": "iPS_DF_6_9",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 452,
+	    "name": "H1_BMP4_Trophoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 453,
+	    "name": "Adipose_Nuclei",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 454,
+	    "name": "Chondrocytes_from_Bone_Marrow_Derived_Mesenchymal_Stem_Cell_Cultured_Cells",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 455,
+	    "name": "Skeletal_Muscle",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 456,
+	    "name": "Stomach_Smooth_Muscle",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 457,
+	    "name": "Adipose_Tissue",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 458,
+	    "name": "Adrenal_Gland",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 459,
+	    "name": "Aorta",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 460,
+	    "name": "Esophagus",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 461,
+	    "name": "Gastric",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 462,
+	    "name": "H1_Derived_Neuronal_Progenitor_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 463,
+	    "name": "Left_Ventricle",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 464,
+	    "name": "Lung",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 465,
+	    "name": "Pancreas",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 466,
+	    "name": "Psoas_Muscle",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 467,
+	    "name": "Right_Atrium",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 468,
+	    "name": "Right_Ventricle",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 469,
+	    "name": "Sigmoid_Colon",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 470,
+	    "name": "Small_Intestine",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 471,
+	    "name": "Spleen",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 472,
+	    "name": "Penis_Foreskin_Fibroblast_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 473,
+	    "name": "Penis_Foreskin_Keratinocyte_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 474,
+	    "name": "Penis_Foreskin_Melanocyte_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 475,
+	    "name": "PFF",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 476,
+	    "name": "PFK",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 477,
+	    "name": "PFM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 478,
+	    "name": "Bv",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 479,
+	    "name": "PBMPC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 480,
+	    "name": "BLEC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 481,
+	    "name": "BMC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 482,
+	    "name": "BSC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 483,
+	    "name": "BGM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 484,
+	    "name": "FB",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 485,
+	    "name": "NCCCD",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 486,
+	    "name": "NCCGED",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 487,
+	    "name": "hESC_Derived_CD184+_Endoderm_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 488,
+	    "name": "Mobilized_CD34_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 489,
+	    "name": "H1_BMP4_Derived_Mesendoderm_Cultured_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 490,
+	    "name": "H1_Derived_Mesenchymal_Stem_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 491,
+	    "name": "Neurosphere_Cultured_Cells_Cortex_Derived",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 492,
+	    "name": "Neurosphere_Cultured_Cells_Ganglionic_Eminence_Derived",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 493,
+	    "name": "UCSF-4star",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 494,
+	    "name": "PBM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 495,
+	    "name": "AN",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 496,
+	    "name": "CM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 497,
+	    "name": "iPS18c",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 498,
+	    "name": "CD19",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 499,
+	    "name": "iPS15b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 500,
+	    "name": "ESI3",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 501,
+	    "name": "CD3",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 502,
+	    "name": "AL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 503,
+	    "name": "MS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 504,
+	    "name": "SM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 505,
+	    "name": "iPS11a",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 506,
+	    "name": "Treg",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 507,
+	    "name": "PI",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 508,
+	    "name": "CD34",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 509,
+	    "name": "SSM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 510,
+	    "name": "RM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 511,
+	    "name": "FH",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 512,
+	    "name": "MCD4",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 513,
+	    "name": "DM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 514,
+	    "name": "iPS18b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 515,
+	    "name": "Th17",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 516,
+	    "name": "CD34C",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 517,
+	    "name": "AK",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 518,
+	    "name": "RSM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 519,
+	    "name": "ADMSCCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 520,
+	    "name": "BMDMSCCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 521,
+	    "name": "BSN",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 522,
+	    "name": "CfBMDMSCCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 523,
+	    "name": "FL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 524,
+	    "name": "HUES6",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 525,
+	    "name": "ESWA7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 526,
+	    "name": "FK",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 527,
+	    "name": "MSCDACC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 528,
+	    "name": "HUES64",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 529,
+	    "name": "HUES48",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 530,
+	    "name": "hDCECC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 531,
+	    "name": "CD4+CD25-Tr",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 532,
+	    "name": "CD4+CD25-Th",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 533,
+	    "name": "StM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 534,
+	    "name": "CD4+CD25-Tm",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 535,
+	    "name": "CSM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 536,
+	    "name": "PFKPC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 537,
+	    "name": "Bladder",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 538,
+	    "name": "Breast_Luminal_Epithelial_Cells",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 539,
+	    "name": "Breast_Stem_Cells",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 540,
+	    "name": "CD8_Naive_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 541,
+	    "name": "CD15",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 542,
+	    "name": "CD4+_CD25-_IL17-_PMA-Ionomycin_stimulated_MACS_purified_Th_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 543,
+	    "name": "hESC_Derived_CD56+_Mesoderm_Cultured_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 544,
+	    "name": "CD4+_CD25-_CD45RA+_Naive_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 545,
+	    "name": "CD19_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 546,
+	    "name": "iPS_DF_19",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 547,
+	    "name": "H9_Derived_Neuronal_Progenitor_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 548,
+	    "name": "H9_Derived_Neuron_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 549,
+	    "name": "FAG",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 550,
+	    "name": "CD4",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 551,
+	    "name": "CD56",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 552,
+	    "name": "CD8",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 553,
+	    "name": "FIL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 554,
+	    "name": "FIS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 555,
+	    "name": "FKL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 556,
+	    "name": "FKR",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 557,
+	    "name": "FLL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 558,
+	    "name": "FLR",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 559,
+	    "name": "FT",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 560,
+	    "name": "iPS_DF_19_7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 561,
+	    "name": "iPS_DF_4_7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 562,
+	    "name": "CD14",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 563,
+	    "name": "FMA",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 564,
+	    "name": "FMB",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 565,
+	    "name": "FML",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 566,
+	    "name": "FMT",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 567,
+	    "name": "FMULS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 568,
+	    "name": "FRC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 569,
+	    "name": "FRCL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 570,
+	    "name": "FRCR",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 571,
+	    "name": "FRP",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 572,
+	    "name": "FRPL",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 573,
+	    "name": "FRPR",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 574,
+	    "name": "FS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 575,
+	    "name": "MCD3",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 576,
+	    "name": "FSp",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 577,
+	    "name": "FP",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 578,
+	    "name": "FMUT",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 579,
+	    "name": "FMLLS",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 580,
+	    "name": "PenisF",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 581,
+	    "name": "PenisM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 582,
+	    "name": "Fetal_Skin",
+	    "cell_type_category": 25
+	}
+	,
+	{
+	    "id": 583,
+	    "name": "Fetal_Spinal_Cord",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 584,
+	    "name": "Mobilized_CD8_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 585,
+	    "name": "Fetal_Testes",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 586,
+	    "name": "Fibroblasts_Fetal_Skin_Abdomen",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 587,
+	    "name": "Fibroblasts_Fetal_Skin_Back",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 588,
+	    "name": "Fibroblasts_Fetal_Skin_Biceps_Left",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 589,
+	    "name": "Fibroblasts_Fetal_Skin_Biceps_Right",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 590,
+	    "name": "Fibroblasts_Fetal_Skin_Quadriceps_Left",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 591,
+	    "name": "Fibroblasts_Fetal_Skin_Quadriceps_Right",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 592,
+	    "name": "Fibroblasts_Fetal_Skin_Scalp",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 593,
+	    "name": "Fibroblasts_Fetal_Skin_Upper_Back",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 594,
+	    "name": "H1DNP",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 595,
+	    "name": "H1BMP4",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 596,
+	    "name": "H1DNPr1a",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 597,
+	    "name": "H1DNPr1b",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 598,
+	    "name": "H1DNPr1c",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 599,
+	    "name": "H1DNPr2a",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 600,
+	    "name": "H1DNPr2b",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 601,
+	    "name": "iPSDF1911",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 602,
+	    "name": "iPSDF69",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 603,
+	    "name": "Adult_Liver",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 604,
+	    "name": "Brain_Hippocampus_Middle",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 605,
+	    "name": "Brain_Germinal_Matrix",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 606,
+	    "name": "HUES63",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 607,
+	    "name": "iPS11b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 608,
+	    "name": "HUES28",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 609,
+	    "name": "HUES8",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 610,
+	    "name": "HUES66",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 611,
+	    "name": "HUES1",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 612,
+	    "name": "SkM",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 613,
+	    "name": "iPS17a",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 614,
+	    "name": "HUES9",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 615,
+	    "name": "HUES49",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 616,
+	    "name": "HUES62",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 617,
+	    "name": "HUES53",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 618,
+	    "name": "iPS17b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 619,
+	    "name": "HUES65",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 620,
+	    "name": "HUES3",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 621,
+	    "name": "H1DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 622,
+	    "name": "H9DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 623,
+	    "name": "H9DNPCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 624,
+	    "name": "HUES13",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 625,
+	    "name": "HUES1DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 626,
+	    "name": "HUES3DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 627,
+	    "name": "HUES44",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 628,
+	    "name": "HUES45DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 629,
+	    "name": "HUES45",
+	    "cell_type_category": 13
+	}
+	,
+	{
+	    "id": 630,
+	    "name": "HUES6DEBCC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 631,
+	    "name": "iPS11c",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 632,
+	    "name": "iPS27b",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 633,
+	    "name": "iPS27e",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 634,
+	    "name": "PF",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 635,
+	    "name": "HDN",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 636,
+	    "name": "hDCE",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 637,
+	    "name": "Bone_Marrow_Derived_Mesenchymal_Stem_Cell_Cultured_Cells",
+	    "cell_type_category": 27
+	}
+	,
+	{
+	    "id": 638,
+	    "name": "Brain_Angular_Gyrus",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 639,
+	    "name": "Brain_Anterior_Caudate",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 640,
+	    "name": "Brain_Cingulate_Gyrus",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 641,
+	    "name": "Brain_Inferior_Temporal_Lobe",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 642,
+	    "name": "Brain_Mid_Frontal_Lobe",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 643,
+	    "name": "Brain_Substantia_Nigra",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 644,
+	    "name": "CD4+_CD25-_IL17+_PMA-Ionomcyin_stimulated_Th17_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 645,
+	    "name": "Fetal_Brain",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 646,
+	    "name": "Renal Cancer",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 647,
+	    "name": "Kidney",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 648,
+	    "name": "Leukemia CD19+CD10+ B Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 649,
+	    "name": "Eosinophils",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 650,
+	    "name": "COPD Lung",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 651,
+	    "name": "Naive CD4+ T Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 652,
+	    "name": "Cortical Bone",
+	    "cell_type_category": 4
+	}
+	,
+	{
+	    "id": 653,
+	    "name": "Trabecular Bone",
+	    "cell_type_category": 4
+	}
+	,
+	{
+	    "id": 654,
+	    "name": "All",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 655,
+	    "name": "Astrocytes",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 656,
+	    "name": "NHBE",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 657,
+	    "name": "ECC1",
+	    "cell_type_category": 17
+	}
+	,
+	{
+	    "id": 658,
+	    "name": "HTB11",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 659,
+	    "name": "PFSK1",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 660,
+	    "name": "U87",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 661,
+	    "name": "GM10847",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 662,
+	    "name": "GM15510",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 663,
+	    "name": "GM18505",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 664,
+	    "name": "GM18526",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 665,
+	    "name": "GM18951",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 666,
+	    "name": "GM19099",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 667,
+	    "name": "GM19193",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 668,
+	    "name": "MCF10AErSrc",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 669,
+	    "name": "PBDE",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 670,
+	    "name": "Raji",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 671,
+	    "name": "SHSY5Y",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 672,
+	    "name": "TRExHEK293",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 673,
+	    "name": "GM12872",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 674,
+	    "name": "GM12873",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 675,
+	    "name": "GM12874",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 676,
+	    "name": "GM12875",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 677,
+	    "name": "CLP",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 678,
+	    "name": "CMP",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 679,
+	    "name": "EB",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 680,
+	    "name": "GMP",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 681,
+	    "name": "HSC",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 682,
+	    "name": "MEP",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 683,
+	    "name": "MK",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 684,
+	    "name": "MPP",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 685,
+	    "name": "Macrophage_M0",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 686,
+	    "name": "Macrophage_M2",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 687,
+	    "name": "Plasma_cells",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 688,
+	    "name": "U266",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 689,
+	    "name": "germinal_center_B_cells",
+	    "cell_type_category": 11
+	}
+	,
+	{
+	    "id": 690,
+	    "name": "hematopoietic_multipotent_progenitor_cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 691,
+	    "name": "precursor_B_lymphocytes",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 692,
+	    "name": "B cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 693,
+	    "name": "Kidney (Renal Carcinoma)",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 694,
+	    "name": "184-hTert-L2",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 695,
+	    "name": "184-hTert-L9",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 697,
+	    "name": "CD19+ cells (B lymphocytes)",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 698,
+	    "name": "MCF10A",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 699,
+	    "name": "Thyroid",
+	    "cell_type_category": 30
+	}
+	,
+	{
+	    "id": 700,
+	    "name": "Adipose_Derived_Mesenchymal_Stem_Cell_Cultured_Cells",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 701,
+	    "name": "Adult_Kidney",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 702,
+	    "name": "Brain_Cerebellum",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 703,
+	    "name": "Breast_Fibroblast_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 704,
+	    "name": "Breast_Myoepithelial_Cells",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 705,
+	    "name": "Breast_vHMEC",
+	    "cell_type_category": 6
+	}
+	,
+	{
+	    "id": 706,
+	    "name": "CD14_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 707,
+	    "name": "CD15_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 708,
+	    "name": "CD20_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 709,
+	    "name": "CD34_Cultured_Cells",
+	    "cell_type_category": 22
+	}
+	,
+	{
+	    "id": 710,
+	    "name": "CD34_Primary_Cells",
+	    "cell_type_category": 22
+	}
+	,
+	{
+	    "id": 711,
+	    "name": "CD3_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 712,
+	    "name": "CD4+_CD25+_CD127-_Treg_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 713,
+	    "name": "CD4+_CD25-_CD45RO+_Memory_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 714,
+	    "name": "CD4+_CD25-_Th_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 715,
+	    "name": "CD4_Memory_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 716,
+	    "name": "CD4_Naive_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 717,
+	    "name": "CD4_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 718,
+	    "name": "CD56_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 719,
+	    "name": "CD8_Memory_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 720,
+	    "name": "CD8_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 721,
+	    "name": "Colon_Smooth_Muscle",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 722,
+	    "name": "Colonic_Mucosa",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 723,
+	    "name": "Duodenum_Mucosa",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 724,
+	    "name": "Duodenum_Smooth_Muscle",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 725,
+	    "name": "ES-I3",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 726,
+	    "name": "ES-WA7",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 727,
+	    "name": "Fetal_Adrenal_Gland",
+	    "cell_type_category": 12
+	}
+	,
+	{
+	    "id": 728,
+	    "name": "Fetal_Heart",
+	    "cell_type_category": 21
+	}
+	,
+	{
+	    "id": 729,
+	    "name": "Fetal_Intestine_Large",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 730,
+	    "name": "Fetal_Intestine_Small",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 731,
+	    "name": "Fetal_Kidney",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 732,
+	    "name": "Fetal_Kidney_Left",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 733,
+	    "name": "Fetal_Kidney_Right",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 734,
+	    "name": "Fetal_Lung",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 735,
+	    "name": "Fetal_Lung_Left",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 736,
+	    "name": "Fetal_Lung_Right",
+	    "cell_type_category": 8
+	}
+	,
+	{
+	    "id": 737,
+	    "name": "Fetal_Muscle_Arm",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 738,
+	    "name": "Fetal_Muscle_Back",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 739,
+	    "name": "Fetal_Muscle_Leg",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 740,
+	    "name": "Fetal_Muscle_Lower_Limb_Skeletal",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 741,
+	    "name": "Fetal_Muscle_Trunk",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 742,
+	    "name": "Fetal_Muscle_Upper_Limb_Skeletal",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 743,
+	    "name": "Fetal_Muscle_Upper_Trunk",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 744,
+	    "name": "Fetal_Ovary",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 745,
+	    "name": "Fetal_Placenta",
+	    "cell_type_category": 24
+	}
+	,
+	{
+	    "id": 746,
+	    "name": "Fetal_Renal_Cortex",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 747,
+	    "name": "Fetal_Renal_Cortex_Left",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 748,
+	    "name": "Fetal_Renal_Cortex_Right",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 749,
+	    "name": "Fetal_Renal_Pelvis",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 750,
+	    "name": "Fetal_Renal_Pelvis_Left",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 751,
+	    "name": "Fetal_Renal_Pelvis_Right",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 752,
+	    "name": "Fetal_Spleen",
+	    "cell_type_category": 26
+	}
+	,
+	{
+	    "id": 753,
+	    "name": "Fetal_Stomach",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 754,
+	    "name": "Fetal_Thymus",
+	    "cell_type_category": 28
+	}
+	,
+	{
+	    "id": 755,
+	    "name": "H1_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 756,
+	    "name": "H9_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 757,
+	    "name": "HUES1_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 758,
+	    "name": "HUES3_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 759,
+	    "name": "HUES45_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 760,
+	    "name": "HUES6_Derived_Embryoid_Body_Cultured_Cells",
+	    "cell_type_category": 14
+	}
+	,
+	{
+	    "id": 761,
+	    "name": "Heart",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 762,
+	    "name": "Mesenchymal_Stem_Cell_Derived_Adipocyte_Cultured_Cells",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 763,
+	    "name": "Mobilized_CD3_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 764,
+	    "name": "Mobilized_CD4_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 765,
+	    "name": "Mobilized_CD56_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 766,
+	    "name": "Muscle_Satellite_Cultured_Cells",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 767,
+	    "name": "Ovary",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 768,
+	    "name": "Pancreatic_Islets",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 769,
+	    "name": "Peripheral_Blood_Mononuclear_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 770,
+	    "name": "Placenta_Amnion",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 771,
+	    "name": "Placenta_Basal_Plate",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 772,
+	    "name": "Placenta_Chorion_Smooth",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 773,
+	    "name": "Placenta_Trophoblast_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 774,
+	    "name": "Placenta_Villi",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 775,
+	    "name": "Primary_Fibroblast",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 776,
+	    "name": "Rectal_Mucosa",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 777,
+	    "name": "Rectal_Smooth_Muscle",
+	    "cell_type_category": 19
+	}
+	,
+	{
+	    "id": 778,
+	    "name": "Stomach_Mucosa",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 779,
+	    "name": "Testis_Spermatozoa_Primary_Cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 780,
+	    "name": "Th17_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 781,
+	    "name": "Thymus",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 782,
+	    "name": "Treg_Primary_Cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 783,
+	    "name": "UCSF-4*",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 784,
+	    "name": "hESC_Derived_CD56+_Ectoderm_Cultured_Cells",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 785,
+	    "name": "iPS-11a",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 786,
+	    "name": "iPS-11b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 787,
+	    "name": "iPS-11c",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 788,
+	    "name": "iPS-15b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 789,
+	    "name": "iPS-17a",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 790,
+	    "name": "iPS-17b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 791,
+	    "name": "iPS-18a",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 792,
+	    "name": "iPS-18b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 793,
+	    "name": "iPS-18c",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 794,
+	    "name": "iPS-20b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 795,
+	    "name": "iPS-27b",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 796,
+	    "name": "iPS-27e",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 797,
+	    "name": "iPS_DF_19.11",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 798,
+	    "name": "iPS_DF_19.7",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 799,
+	    "name": "iPS_DF_4.7",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 800,
+	    "name": "iPS_DF_6.9",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 801,
+	    "name": "CD14-positive, CD16-negative classical monocyte",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 802,
+	    "name": "CD34-negative, CD41-positive, CD42-positive megakaryocyte cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 803,
+	    "name": "CD4-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 804,
+	    "name": "CD8-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 805,
+	    "name": "Germinal Center B-Cell-Like Diffuse Large B-Cell Lymphoma",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 806,
+	    "name": "Mantle cell lymphoma",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 807,
+	    "name": "Multiple myeloma",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 808,
+	    "name": "Plasma cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 809,
+	    "name": "Sporadic Burkitt lymphoma",
+	    "cell_type_category": 9
+	}
+	,
+	{
+	    "id": 810,
+	    "name": "alternatively activated macrophage",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 811,
+	    "name": "common lymphoid progenitor",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 812,
+	    "name": "common myeloid progenitor",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 813,
+	    "name": "erythroblast",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 814,
+	    "name": "germinal center B cell",
+	    "cell_type_category": 11
+	}
+	,
+	{
+	    "id": 815,
+	    "name": "granulocyte monocyte progenitor cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 816,
+	    "name": "hematopoietic multipotent progenitor cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 817,
+	    "name": "hematopoietic stem cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 818,
+	    "name": "inflammatory macrophage",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 819,
+	    "name": "macrophage",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 820,
+	    "name": "mature eosinophil",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 821,
+	    "name": "mature neutrophil",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 822,
+	    "name": "megakaryocyte-erythroid progenitor cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 823,
+	    "name": "precursor lymphocyte of B lineage",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 824,
+	    "name": "hepatocyte",
+	    "cell_type_category": 23
+	}
+	,
+	{
+	    "id": 826,
+	    "name": "aortic endothelial cell",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 827,
+	    "name": "endocardial cell",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 828,
+	    "name": "endothelial cell of artery",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 829,
+	    "name": "endothelial cell of coronary artery",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 830,
+	    "name": "endothelial cell of umbilical vein",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 831,
+	    "name": "microvascular endothelial cell",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 832,
+	    "name": "pulmonary artery endothelial cell",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 833,
+	    "name": "Brodmann (1909) area 11",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 834,
+	    "name": "Brodmann (1909) area 44",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 835,
+	    "name": "Brodmann (1909) area 8;Brodmann (1909) area 9",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 836,
+	    "name": "skeletal muscle tissue",
+	    "cell_type_category": 3
+	}
+	,
+	{
+	    "id": 837,
+	    "name": "CD4-positive helper T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 838,
+	    "name": "eosinophil",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 839,
+	    "name": "fat cell",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 840,
+	    "name": "induced pluripotent stem cell",
+	    "cell_type_category": 29
+	}
+	,
+	{
+	    "id": 841,
+	    "name": "CD38-negative naive B cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 842,
+	    "name": "Chronic lymphocytic leukemia",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 843,
+	    "name": "Myeloid cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 844,
+	    "name": "central memory CD4-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 845,
+	    "name": "central memory CD8-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 846,
+	    "name": "class switched memory B cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 847,
+	    "name": "conventional dendritic cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 848,
+	    "name": "cytotoxic CD56-dim natural killer cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 849,
+	    "name": "effector memory CD4-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 850,
+	    "name": "effector memory CD8-positive, alpha-beta T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 851,
+	    "name": "effector memory CD8-positive, alpha-beta T cell, terminally differentiated",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 852,
+	    "name": "endothelial cell of umbilical vein (proliferating)",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 853,
+	    "name": "endothelial cell of umbilical vein (resting)",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 854,
+	    "name": "memory B cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 855,
+	    "name": "regulatory T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 856,
+	    "name": "subcutaneous fat cell",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 857,
+	    "name": "omentum preadipocyte",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 858,
+	    "name": "adipocyte of omentum tissue",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 859,
+	    "name": "visceral abdominal adipose tissue",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 860,
+	    "name": "subcutaneous preadipocyte",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 861,
+	    "name": "neutrophil",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 862,
+	    "name": "forelimb bud",
+	    "cell_type_category": 32
+	}
+	,
+	{
+	    "id": 863,
+	    "name": "hindlimb bud",
+	    "cell_type_category": 32
+	}
+	,
+	{
+	    "id": 864,
+	    "name": "Basal cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 865,
+	    "name": "Brain-Frontal Lobe-Left",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 866,
+	    "name": "Brain-Temporal lobe-Left",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 867,
+	    "name": "Hematopoietic",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 868,
+	    "name": "Luminal cells-mature",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 869,
+	    "name": "Luminal progenitor",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 870,
+	    "name": "Stromal cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 871,
+	    "name": "mucosal epithelium",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 872,
+	    "name": "Adipocyte",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 873,
+	    "name": "Beta cell",
+	    "cell_type_category": 33
+	}
+	,
+	{
+	    "id": 874,
+	    "name": "Islet cell",
+	    "cell_type_category": 33
+	}
+	,
+	{
+	    "id": 875,
+	    "name": "Podocyte",
+	    "cell_type_category": 7
+	}
+	,
+	{
+	    "id": 876,
+	    "name": "Preadipocyte",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 877,
+	    "name": "Brain-Frontal Lobe-Right",
+	    "cell_type_category": 2
+	}
+	,
+	{
+	    "id": 878,
+	    "name": "CD19+ cells (B lymphocytes),B cells",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 879,
+	    "name": "CD3-negative, CD4-positive, CD8-positive, double positive thymocyte",
+	    "cell_type_category": 28
+	}
+	,
+	{
+	    "id": 880,
+	    "name": "CD3-positive, CD4-positive, CD8-positive, double positive thymocyte",
+	    "cell_type_category": 28
+	}
+	,
+	{
+	    "id": 881,
+	    "name": "CD4-positive, alpha-beta thymocyte",
+	    "cell_type_category": 28
+	}
+	,
+	{
+	    "id": 882,
+	    "name": "CD8-positive, alpha-beta thymocyte",
+	    "cell_type_category": 28
+	}
+	,
+	{
+	    "id": 883,
+	    "name": "T-cell acute lymphocytic leukemia",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 884,
+	    "name": "adult endothelial progenitor cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 885,
+	    "name": "band form neutrophil",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 886,
+	    "name": "lymphocyte of B lineage",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 887,
+	    "name": "mesenchymal stem cell of the bone marrow",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 888,
+	    "name": "mononuclear cell of bone marrow",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 889,
+	    "name": "naive B cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 890,
+	    "name": "neoplastic plasma cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 891,
+	    "name": "neutrophilic metamyelocyte",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 892,
+	    "name": "neutrophilic myelocyte",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 893,
+	    "name": "peripheral blood mononuclear cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 894,
+	    "name": "precursor B cell",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 895,
+	    "name": "segmented neutrophil of bone marrow",
+	    "cell_type_category": 10
+	}
+	,
+	{
+	    "id": 896,
+	    "name": "Central Memory CD4-positive",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 897,
+	    "name": "naive T cell",
+	    "cell_type_category": 1
+	}
+	,
+	{
+	    "id": 898,
+	    "name": "White Fat Cell",
+	    "cell_type_category": 18
+	}
+	,
+	{
+	    "id": 899,
+	    "name": "H1-hESC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 900,
+	    "name": "CD14-positive monocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 901,
+	    "name": "Loucy",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 902,
+	    "name": "keratinocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 903,
+	    "name": "fibroblast of dermis",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 904,
+	    "name": "mammary epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 905,
+	    "name": "HeLa-S3",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 906,
+	    "name": "MCF-7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 907,
+	    "name": "Oci-Ly-7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 908,
+	    "name": "osteoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 909,
+	    "name": "fibroblast of lung",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 910,
+	    "name": "DND-41",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 911,
+	    "name": "astrocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 912,
+	    "name": "DOHH2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 913,
+	    "name": "myotube",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 914,
+	    "name": "skeletal muscle myoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 915,
+	    "name": "cardiac mesoderm",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 916,
+	    "name": "SK-N-SH",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 917,
+	    "name": "H7-hESC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 918,
+	    "name": "bronchial epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 919,
+	    "name": "Caco-2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 920,
+	    "name": "NT2/D1",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 921,
+	    "name": "kidney epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 922,
+	    "name": "mononuclear cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 923,
+	    "name": "fibroblast of skin of abdomen",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 924,
+	    "name": "LNCaP clone FGC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 925,
+	    "name": "fibroblast of gingiva",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 926,
+	    "name": "choroid plexus epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 927,
+	    "name": "foreskin fibroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 928,
+	    "name": "fibroblast of upper leg skin",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 929,
+	    "name": "epithelial cell of proximal tubule",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 930,
+	    "name": "WERI-Rb-1",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 931,
+	    "name": "brain microvascular endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 932,
+	    "name": "skeletal muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 933,
+	    "name": "epithelial cell of esophagus",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 934,
+	    "name": "HL-60",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 935,
+	    "name": "retinal pigment epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 936,
+	    "name": "fibroblast of mammary gland",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 937,
+	    "name": "astrocyte of the cerebellum",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 938,
+	    "name": "HFF-Myc",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 939,
+	    "name": "astrocyte of the spinal cord",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 940,
+	    "name": "fibroblast of pedal digit skin",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 941,
+	    "name": "cardiac muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 942,
+	    "name": "cardiac fibroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 943,
+	    "name": "fibroblast of the aortic adventitia",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 944,
+	    "name": "fibroblast of pulmonary artery",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 945,
+	    "name": "fibroblast of villous mesenchyme",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 946,
+	    "name": "SK-N-MC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 947,
+	    "name": "GM12866",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 948,
+	    "name": "Daoy",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 949,
+	    "name": "lung microvascular endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 950,
+	    "name": "umbilical cord",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 951,
+	    "name": "hair follicle dermal papilla cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 952,
+	    "name": "uterine smooth muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 953,
+	    "name": "tracheal epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 954,
+	    "name": "endometrial microvascular endothelial cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 955,
+	    "name": "dermis blood vessel endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 956,
+	    "name": "placental epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 957,
+	    "name": "G401",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 958,
+	    "name": "smooth muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 959,
+	    "name": "mammary microvascular endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 960,
+	    "name": "cardiac ventricle fibroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 961,
+	    "name": "Purkinje cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 962,
+	    "name": "occipital lobe",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 963,
+	    "name": "articular chondrocyte of knee joint",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 964,
+	    "name": "dermis microvascular lymphatic vessel endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 965,
+	    "name": "frontal cortex",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 966,
+	    "name": "IMR-90",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 967,
+	    "name": "skin of body",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 968,
+	    "name": "dermis lymphatic vessel endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 969,
+	    "name": "PFSK-1",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 970,
+	    "name": "Karpas-422",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 971,
+	    "name": "parietal lobe",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 972,
+	    "name": "SK-MEL-5",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 973,
+	    "name": "cerebellar granule cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 974,
+	    "name": "airway epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 975,
+	    "name": "temporal lobe",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 976,
+	    "name": "metanephros",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 977,
+	    "name": "RPMI-7951",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 978,
+	    "name": "H4",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 979,
+	    "name": "hair follicular keratinocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 980,
+	    "name": "pericyte cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 981,
+	    "name": "glomerular endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 982,
+	    "name": "SJSA1",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 983,
+	    "name": "NCI-H460",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 984,
+	    "name": "tongue",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 985,
+	    "name": "bipolar spindle neuron",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 986,
+	    "name": "A375",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 987,
+	    "name": "bronchus fibroblast of lung",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 988,
+	    "name": "A172",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 989,
+	    "name": "spinal cord",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 990,
+	    "name": "bladder microvascular endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 991,
+	    "name": "fibroblast of arm",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 992,
+	    "name": "thyroid gland",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 993,
+	    "name": "pericardium fibroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 994,
+	    "name": "regular cardiac myocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 995,
+	    "name": "stomach",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 996,
+	    "name": "mesenchymal stem cell of Wharton's jelly",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 997,
+	    "name": "smooth muscle cell of the umbilical artery",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 998,
+	    "name": "Caki2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 999,
+	    "name": "HT1080",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1000,
+	    "name": "smooth muscle cell of bladder",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1001,
+	    "name": "liver",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1002,
+	    "name": "smooth muscle cell of the pulmonary artery",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1003,
+	    "name": "cerebellum",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1004,
+	    "name": "aortic smooth muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1005,
+	    "name": "pyramidal cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1006,
+	    "name": "mesangial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1007,
+	    "name": "vein endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1008,
+	    "name": "MG63",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1009,
+	    "name": "human nasal epithelial cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1010,
+	    "name": "epithelial cell of umbilical artery",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1011,
+	    "name": "camera-type eye",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1012,
+	    "name": "epithelial cell of alveolus of lung",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1013,
+	    "name": "SK-N-DZ",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1014,
+	    "name": "SJCRH30",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1015,
+	    "name": "smooth muscle cell of trachea",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1016,
+	    "name": "neural cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1017,
+	    "name": "neural progenitor cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1018,
+	    "name": "smooth muscle cell of the coronary artery",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1019,
+	    "name": "diencephalon",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1020,
+	    "name": "skeletal muscle satellite cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1021,
+	    "name": "melanocyte of skin",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1022,
+	    "name": "bronchial smooth muscle cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1023,
+	    "name": "cardiac atrium fibroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1024,
+	    "name": "myometrial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1025,
+	    "name": "HT-29",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1026,
+	    "name": "renal cortical epithelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1027,
+	    "name": "urinary bladder",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1028,
+	    "name": "LHCN-M2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1029,
+	    "name": "thoracic aorta endothelial cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1030,
+	    "name": "PC-3",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1031,
+	    "name": "mesenchymal stem cell of adipose",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1032,
+	    "name": "M059J",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1033,
+	    "name": "uterus",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1034,
+	    "name": "cerebral cortex, layer 5",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1035,
+	    "name": "neural tube",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1036,
+	    "name": "intestine",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1037,
+	    "name": "G1E-ER4",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1038,
+	    "name": "CH12.LX",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1039,
+	    "name": "megakaryocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1040,
+	    "name": "megakaryocyte progenitor cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1041,
+	    "name": "adrenal gland",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1042,
+	    "name": "embryonic facial prominence",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1043,
+	    "name": "hindbrain",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1044,
+	    "name": "forebrain",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1045,
+	    "name": "limb",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1046,
+	    "name": "cerebellum Purkinje cell layer",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1047,
+	    "name": "midbrain",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1048,
+	    "name": "G1E",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1049,
+	    "name": "cerebellar granule layer",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1050,
+	    "name": "erythroid progenitor cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1051,
+	    "name": "lower leg skin",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1052,
+	    "name": "esophagus mucosa",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1053,
+	    "name": "muscle layer of esophagus",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1054,
+	    "name": "right cardiac atrium",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1055,
+	    "name": "heart left ventricle",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1056,
+	    "name": "transverse colon",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1057,
+	    "name": "esophagogastric junction",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1058,
+	    "name": "adipose tissue",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1059,
+	    "name": "tibial nerve",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1060,
+	    "name": "adipose tissue of omentum",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1061,
+	    "name": "OCI-LY7",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1062,
+	    "name": "upper lobe of left lung",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1063,
+	    "name": "nasal cavity respiratory epithelium epithelial cell of viscerocranial mucosa",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1064,
+	    "name": "omentum",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1065,
+	    "name": "female gonad",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1066,
+	    "name": "sigmoid colon",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1067,
+	    "name": "right lobe of liver",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1068,
+	    "name": "cardiac myocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1069,
+	    "name": "endothelial cell of umbilical artery",
+	    "cell_type_category": 31
+	}
+	,
+	{
+	    "id": 1070,
+	    "name": "amygdala",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1071,
+	    "name": "Large Intestine-Colon-Ascending (Right)",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1072,
+	    "name": "Large Intestine-Colon-Rectosigmoid",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1073,
+	    "name": "B cells",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1074,
+	    "name": "Large Intestine-Colon",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1075,
+	    "name": "lymph node",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1076,
+	    "name": "SU-DHL-5",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1077,
+	    "name": "unswitched memory B cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1078,
+	    "name": "immature conventional dendritic cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1079,
+	    "name": "JVM-2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1080,
+	    "name": "DG-75",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1081,
+	    "name": "thymocyte",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1082,
+	    "name": "Z-138",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1083,
+	    "name": "blast forming unit erythroid",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1084,
+	    "name": "BL-2",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1085,
+	    "name": "mature conventional dendritic cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1086,
+	    "name": "venous blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1087,
+	    "name": "bone marrow",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1088,
+	    "name": "late basophilic and polychromatophilic erythroblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1089,
+	    "name": "capillary blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1090,
+	    "name": "colony forming unit erythroid",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1091,
+	    "name": "U-266",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1092,
+	    "name": "osteoclast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1093,
+	    "name": "B cell from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1094,
+	    "name": "CD4+ T cell from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1095,
+	    "name": "CD8+ T cell from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1096,
+	    "name": "Hematopoietic stem cell from bone marrow",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1097,
+	    "name": "Neutrophil from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1098,
+	    "name": "Hematopoietic stem cell from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1099,
+	    "name": "Multipotent progenitor from cord blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1100,
+	    "name": "Multipotent progenitor from bone marrow",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1101,
+	    "name": "Megakaryocyte erythrocyte progenitor from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1102,
+	    "name": "Immature lymphoid progenitor 2 from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1103,
+	    "name": "Immature lymphoid progenitor 3 from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1104,
+	    "name": "Natural killer cell from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1105,
+	    "name": "Multipotent progenitor from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1106,
+	    "name": "Megakaryocyte from bone marrow",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1107,
+	    "name": "Immature lymphoid progenitor 1 from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1108,
+	    "name": "Immature lymphoid progenitor 0 from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1109,
+	    "name": "Granulocyte macrophage progenitor from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1110,
+	    "name": "Monocyte from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1111,
+	    "name": "Common lymphoid progenitor from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1112,
+	    "name": "Common myeloid progenitor from peripheral blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1113,
+	    "name": "Hematopoietic stem cell from fetal liver",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1114,
+	    "name": "Hematopoietic stem cell from cord blood",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1115,
+	    "name": "CD4-positive alpha-beta memory T cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1116,
+	    "name": "HepaRG",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1117,
+	    "name": "naive CD4-positive T cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1118,
+	    "name": "CD4-positive, alpha-beta memory T cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1119,
+	    "name": "white adipose tissue",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1120,
+	    "name": "Endometrial_epitherium_secretory_phase",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1121,
+	    "name": "Endometrial_epitherium_follicular_phase",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1122,
+	    "name": "CD49f_positive_cytotrophoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1123,
+	    "name": "Syncytiotrophoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1124,
+	    "name": "HLA-G_positive_extravillous_cytotrophoblast",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1125,
+	    "name": "Endometrial_stroma_cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1126,
+	    "name": "Islet_cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1127,
+	    "name": "Beta_cell",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1128,
+	    "name": "anterior cingulate cortex",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1129,
+	    "name": "Temporal Cortex",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1130,
+	    "name": "Prefrontal Cortex",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1131,
+	    "name": "iPSC",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1132,
+	    "name": "early neuron",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1133,
+	    "name": "Mesangial",
+	    "cell_type_category": 5
+	}
+	,
+	{
+	    "id": 1134,
+	    "name": "alpha_cell",
+	    "cell_type_category": 5
+	}
+	
+]
+}

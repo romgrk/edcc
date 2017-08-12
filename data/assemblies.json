@@ -1,0 +1,25 @@
+{
+"assembly": [
+
+    {
+        "id": 1,
+        "name": "hg19",
+        "species": "Human"
+    },
+    {
+        "id": 4,
+        "name": "hg38",
+        "species": "Human"
+    },
+    {
+        "id": 3,
+        "name": "mm10",
+        "species": "Mouse"
+    },
+    {
+        "id": 2,
+        "name": "",
+        "species": "Other species"
+    }
+
+]}

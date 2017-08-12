@@ -1,0 +1,87 @@
+{
+    "institution": [
+    {
+        "id": 1,
+        "name": "CEEHRC",
+        "short_name": "CEEHRC",
+        "is_default": 1,
+        "color": "#d62728",
+        "build": "2014-09-18",
+        "site_url" : "http://www.epigenomes.ca/about",
+        "methods_url" : "http://epigenomesportal.ca/edcc/CEEHRC_methods.html",
+        "policies_url" : "http://epigenomesportal.ca/edcc/CEEHRC_policies.html"
+    },
+    {
+        "id": 3,
+        "name": "Blueprint",
+        "short_name": "Blueprint",
+        "is_default": 1,
+        "color": "#28AFDC",
+        "build": "2014-08-11",
+        "site_url" : "http://www.blueprint-epigenome.eu/",
+        "methods_url" : "http://dcc.blueprint-epigenome.eu/#/md/methods",
+        "policies_url" : "http://www.blueprint-epigenome.eu/index.cfm?p=A73C2005-A2D3-0FDE-EF9BC386B65DF073"
+    },
+    {
+        "id": 4,
+        "name": "ENCODE",
+        "short_name": "ENCODE",
+        "is_default": 1,
+        "color": "#2ca02c",
+        "build": "2011-01",
+        "site_url" : "https://www.encodeproject.org",
+        "methods_url" : "https://www.encodeproject.org/data-standards/",
+        "policies_url" : "http://encodeproject.org/ENCODE/terms.html"
+    },
+    {
+        "id": 5,
+        "name": "NIH Roadmap",
+        "short_name": "Roadmap",
+        "is_default": 1,
+        "color": "#9467bd",
+        "build": "2014-05-29",
+        "site_url" : "http://www.roadmapepigenomics.org/",
+        "policies_url" : "http://www.ncbi.nlm.nih.gov/geo/roadmap/epigenomics/"
+    },
+    {
+        "id": 6,
+        "name": "DEEP",
+        "short_name": "DEEP",
+        "is_default": 1,
+        "color": "#ffcc00",
+        "build": "2014-08-15",
+        "site_url" : "http://www.deutsches-epigenom-programm.de/",
+        "methods_url" : "http://doi.org/10.17617/1.2W",
+        "policies_url" : "http://www.deutsches-epigenom-programm.de/data-access/"
+    },
+    {
+        "id": 7,
+        "name": "AMED-CREST",
+        "short_name": "CREST",
+        "is_default": 1,
+        "color": "#fb9a99",
+        "build": "2014-09-12",
+        "site_url" : "http://crest-ihec.jp/english/database/index.html",
+        "policies_url" : "http://epigenome.cbrc.jp/ihec/crest-data-release-policy"
+    },
+    {
+        "id": 8,
+        "name": "KNIH",
+        "short_name": "KNIH",
+        "is_default": 1,
+        "color": "#87E600",
+        "build": "2015-07-15",
+        "site_url" : "http://152.99.75.168/KEP/"
+    },
+    {
+        "id": 9,
+        "name": "GIS",
+        "short_name": "GIS",
+        "is_default": 1,
+        "color": "#ff9800",
+        "build": "2016-12-20",
+        "site_url" : ""
+    }
+        ]
+    }
+    

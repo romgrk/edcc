@@ -1,0 +1,20 @@
+/*
+ * spinner.css
+ */
+
+.spinner {
+  content: '\A';
+  display: inline-block;
+  width:  100px;
+  height: 100px;
+  border: 10px solid white;
+  border-top-color: blue;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+

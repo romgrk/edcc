@@ -1,0 +1,2004 @@
+{
+   "dataset" : [
+      {
+         "sampleID" : "GM12892_YY1_Sg__HudsonAlpha_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null,
+         "assay" : 97,
+         "donorID" : "GM12892 YY1 Sg (HudsonAlpha)",
+         "cell_type" : 401,
+         "id" : 19245
+      },
+      {
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000116.1",
+         "sampleID" : "ERS333896",
+         "species" : "human",
+         "assay" : 10,
+         "donorID" : "ERS333896",
+         "cell_type" : 806,
+         "id" : 18008
+      },
+      {
+         "cell_type" : 727,
+         "id" : 21607,
+         "assay" : 7,
+         "donorID" : "H-24800",
+         "sampleID" : "SRS403005_H-24800_727",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null
+      },
+      {
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002212",
+         "sampleID" : "ERS422258",
+         "species" : "human",
+         "cell_type" : 801,
+         "id" : 28977,
+         "donorID" : "S00FVJ",
+         "assay" : 10
+      },
+      {
+         "donorID" : "ENCDO115AAA",
+         "assay" : 10,
+         "id" : 26068,
+         "cell_type" : 692,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "ENCBS400ARI-ENCBS836CYW"
+      },
+      {
+         "id" : 28457,
+         "cell_type" : 1073,
+         "donorID" : "232-14",
+         "assay" : 10,
+         "epirr_id" : "IHECRE00000229.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "CEMT0006.gDNA"
+      },
+      {
+         "sampleID" : "CEMT0033.gDNA",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00001011.1",
+         "cell_type" : 1071,
+         "id" : 28637,
+         "donorID" : "AKCC-52",
+         "assay" : 5
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS366514_STL002_459",
+         "species" : "human",
+         "donorID" : "STL002",
+         "assay" : 8,
+         "cell_type" : 459,
+         "id" : 21621
+      },
+      {
+         "sampleID" : "MS002902",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000788.1",
+         "donorID" : "McGill0029",
+         "assay" : 2,
+         "cell_type" : 1,
+         "id" : 27302
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS118688_TC001_540",
+         "epirr_id" : null,
+         "institution" : 5,
+         "assay" : 7,
+         "donorID" : "TC001",
+         "id" : 20876,
+         "cell_type" : 540
+      },
+      {
+         "donorID" : "K562 GABPA Pk (HudsonAlpha)",
+         "assay" : 79,
+         "cell_type" : 304,
+         "id" : 18763,
+         "sampleID" : "K562_GABPA_Pk__HudsonAlpha_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null
+      },
+      {
+         "cell_type" : 836,
+         "id" : 27339,
+         "assay" : 2,
+         "donorID" : "McGill0037",
+         "sampleID" : "MS003701",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000775.1"
+      },
+      {
+         "assay" : 184,
+         "donorID" : "H-24089",
+         "id" : 22091,
+         "cell_type" : 736,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS267024_H-24089_736"
+      },
+      {
+         "cell_type" : 429,
+         "id" : 21343,
+         "assay" : 55,
+         "donorID" : "AY223",
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS307308_AY223_429",
+         "species" : "human"
+      },
+      {
+         "sampleID" : "A549_POL2_Pk__HudsonAlpha_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null,
+         "cell_type" : 344,
+         "id" : 19047,
+         "assay" : 65,
+         "donorID" : "A549 POL2 Pk (HudsonAlpha)"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS213637_AK135_489",
+         "id" : 20385,
+         "cell_type" : 489,
+         "assay" : 5,
+         "donorID" : "AK135"
+      },
+      {
+         "cell_type" : 803,
+         "id" : 17869,
+         "donorID" : "S007G7",
+         "assay" : 9,
+         "sampleID" : "ERS257461",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000093.1"
+      },
+      {
+         "donorID" : "WGBS_Lib_25",
+         "assay" : 1,
+         "id" : 20402,
+         "cell_type" : 543,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS309499_WGBS_Lib_25_543"
+      },
+      {
+         "epirr_id" : "IHECRE00000666.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "MS000801",
+         "assay" : 1,
+         "donorID" : "McGill0008",
+         "id" : 27081,
+         "cell_type" : 837
+      },
+      {
+         "id" : 27058,
+         "cell_type" : 837,
+         "donorID" : "McGill0006",
+         "assay" : 4,
+         "species" : "human",
+         "sampleID" : "MS000601",
+         "epirr_id" : "IHECRE00000886.1",
+         "institution" : 1
+      },
+      {
+         "id" : 27670,
+         "cell_type" : 1,
+         "assay" : 2,
+         "donorID" : "McGill0172",
+         "species" : "human",
+         "sampleID" : "MS017201",
+         "epirr_id" : "IHECRE00000761.1",
+         "institution" : 1
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "MS038701",
+         "donorID" : "McGill0387",
+         "assay" : 2,
+         "id" : 28055,
+         "cell_type" : 803
+      },
+      {
+         "donorID" : "AKDIV05",
+         "assay" : 4,
+         "id" : 28847,
+         "cell_type" : 1072,
+         "epirr_id" : "IHECRE00001234.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "CEMT0072.gDNA"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS167278_112_640",
+         "id" : 21674,
+         "cell_type" : 640,
+         "assay" : 9,
+         "donorID" : "112"
+      },
+      {
+         "cell_type" : 3,
+         "id" : 27594,
+         "assay" : 187,
+         "donorID" : "McGill0124",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000904.1",
+         "sampleID" : "MS012406",
+         "species" : "human"
+      },
+      {
+         "cell_type" : 801,
+         "id" : 28986,
+         "donorID" : "S00SMM",
+         "assay" : 10,
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002370",
+         "sampleID" : "ERS523827",
+         "species" : "human"
+      },
+      {
+         "donorID" : "McGill0475",
+         "assay" : 8,
+         "id" : 28224,
+         "cell_type" : 1070,
+         "epirr_id" : null,
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "MS047501"
+      },
+      {
+         "donorID" : "CTL04",
+         "assay" : 3,
+         "cell_type" : 774,
+         "id" : 21219,
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "CTL04_774",
+         "species" : "human"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS118712_TC007_769",
+         "id" : 20472,
+         "cell_type" : 769,
+         "assay" : 186,
+         "donorID" : "TC007"
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS167279_112_642",
+         "species" : "human",
+         "assay" : 5,
+         "donorID" : "112",
+         "cell_type" : 642,
+         "id" : 21806
+      },
+      {
+         "id" : 17824,
+         "cell_type" : 843,
+         "assay" : 10,
+         "donorID" : "pz_283",
+         "species" : "human",
+         "sampleID" : "ERS255945",
+         "epirr_id" : "IHECRE00000031.1",
+         "institution" : 3
+      },
+      {
+         "epirr_id" : "IHECRE00001233.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "CEMT0068.gDNA",
+         "id" : 28839,
+         "cell_type" : 1072,
+         "assay" : 10,
+         "donorID" : "AKDIV03"
+      },
+      {
+         "id" : 29851,
+         "cell_type" : 821,
+         "assay" : 5,
+         "donorID" : "S00P6T",
+         "epirr_id" : "IHECRE00002521",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS487500"
+      },
+      {
+         "sampleID" : "ERS643330",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002333",
+         "cell_type" : 803,
+         "id" : 29170,
+         "assay" : 10,
+         "donorID" : "S00YVH"
+      },
+      {
+         "donorID" : "AKCC-46",
+         "assay" : 183,
+         "cell_type" : 1071,
+         "id" : 28664,
+         "sampleID" : "CEMT0034.tRNA",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00001010.1"
+      },
+      {
+         "sampleID" : "ERS523816",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002640",
+         "cell_type" : 821,
+         "id" : 29646,
+         "donorID" : "S00SJS",
+         "assay" : 5
+      },
+      {
+         "epirr_id" : "IHECRE00000229.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "CEMT0006.gDNA",
+         "id" : 28457,
+         "cell_type" : 1073,
+         "donorID" : "232-14",
+         "assay" : 10
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS120855_4_603",
+         "id" : 21935,
+         "cell_type" : 603,
+         "assay" : 9,
+         "donorID" : "4"
+      },
+      {
+         "donorID" : "mRNA-Seq_ff_ips_19_11_r3",
+         "assay" : 183,
+         "cell_type" : 797,
+         "id" : 21256,
+         "sampleID" : "SRS184458_mRNA-Seq_ff_ips_19_11_r3_797",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null
+      },
+      {
+         "cell_type" : 836,
+         "id" : 27188,
+         "donorID" : "McGill0018",
+         "assay" : 1,
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000781.1",
+         "sampleID" : "MS001801",
+         "species" : "human"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS255682_H-24042_737",
+         "id" : 22089,
+         "cell_type" : 737,
+         "assay" : 184,
+         "donorID" : "H-24042"
+      },
+      {
+         "assay" : 10,
+         "donorID" : "STL003",
+         "id" : 22072,
+         "cell_type" : 461,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS308397_STL003_461"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS643000",
+         "epirr_id" : "IHECRE00002198",
+         "institution" : 3,
+         "id" : 29759,
+         "cell_type" : 821,
+         "donorID" : "S00UKI",
+         "assay" : 10
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "K562_CHD2_Sg__Stanford_",
+         "species" : "human",
+         "assay" : 123,
+         "donorID" : "K562 CHD2 Sg (Stanford)",
+         "cell_type" : 304,
+         "id" : 19492
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000872.1",
+         "sampleID" : "MS023301",
+         "species" : "human",
+         "cell_type" : 803,
+         "id" : 27759,
+         "assay" : 187,
+         "donorID" : "McGill0233"
+      },
+      {
+         "assay" : 8,
+         "donorID" : "HuFGM02",
+         "id" : 21944,
+         "cell_type" : 605,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS167238_HuFGM02_605"
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "ENCBS487ENC",
+         "species" : "human",
+         "cell_type" : 943,
+         "id" : 25615,
+         "donorID" : "ENCDO126AAA",
+         "assay" : 183
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS167279_112_642",
+         "species" : "human",
+         "donorID" : "112",
+         "assay" : 6,
+         "cell_type" : 642,
+         "id" : 21970
+      },
+      {
+         "cell_type" : 738,
+         "id" : 21203,
+         "donorID" : "H-24005",
+         "assay" : 183,
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS255684_H-24005_738",
+         "species" : "human"
+      },
+      {
+         "assay" : 7,
+         "donorID" : "CEMT0008.gDNA",
+         "id" : 28374,
+         "cell_type" : 695,
+         "species" : "human",
+         "sampleID" : "CEMT0008.gDNA",
+         "epirr_id" : "IHECRE00000225.1",
+         "institution" : 1
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS183501_RO_01679_545",
+         "species" : "human",
+         "cell_type" : 545,
+         "id" : 20678,
+         "assay" : 8,
+         "donorID" : "RO_01679"
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS167236_HuFNSC02_491",
+         "species" : "human",
+         "cell_type" : 491,
+         "id" : 20586,
+         "donorID" : "HuFNSC02",
+         "assay" : 44
+      },
+      {
+         "epirr_id" : "IHECRE00000094.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS150411",
+         "id" : 17629,
+         "cell_type" : 821,
+         "assay" : 9,
+         "donorID" : "C001UY"
+      },
+      {
+         "assay" : 7,
+         "donorID" : "McGill0010",
+         "id" : 27099,
+         "cell_type" : 837,
+         "species" : "human",
+         "sampleID" : "MS001001",
+         "epirr_id" : "IHECRE00000867.1",
+         "institution" : 1
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS172880_mRNA-Seq_h1-npc_r1_462",
+         "species" : "human",
+         "cell_type" : 462,
+         "id" : 21228,
+         "assay" : 183,
+         "donorID" : "mRNA-Seq_h1-npc_r1"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS267021_H-24089_735",
+         "id" : 22297,
+         "cell_type" : 735,
+         "donorID" : "H-24089",
+         "assay" : 184
+      },
+      {
+         "donorID" : "McGill0176",
+         "assay" : 1,
+         "id" : 27685,
+         "cell_type" : 1,
+         "species" : "human",
+         "sampleID" : "MS017603",
+         "epirr_id" : "IHECRE00000833.1",
+         "institution" : 1
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS213630_SK450_429",
+         "id" : 20218,
+         "cell_type" : 429,
+         "donorID" : "SK450",
+         "assay" : 7
+      },
+      {
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000072.1",
+         "sampleID" : "ERS534759",
+         "species" : "human",
+         "cell_type" : 819,
+         "id" : 18248,
+         "donorID" : "N00031406634921",
+         "assay" : 2
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "A549_POL2_Pk__HudsonAlpha_",
+         "species" : "human",
+         "cell_type" : 344,
+         "id" : 19047,
+         "donorID" : "A549 POL2 Pk (HudsonAlpha)",
+         "assay" : 65
+      },
+      {
+         "cell_type" : 705,
+         "id" : 20676,
+         "assay" : 5,
+         "donorID" : "RM035",
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS118700_RM035_705",
+         "species" : "human"
+      },
+      {
+         "id" : 18176,
+         "cell_type" : 811,
+         "assay" : 2,
+         "donorID" : "C07015",
+         "epirr_id" : "IHECRE00000057.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS142890"
+      },
+      {
+         "id" : 25551,
+         "cell_type" : 296,
+         "assay" : 3,
+         "donorID" : "ENCDO000AAK",
+         "species" : "human",
+         "sampleID" : "ENCBS089RNA-ENCBS090RNA",
+         "epirr_id" : null,
+         "institution" : 4
+      },
+      {
+         "sampleID" : "MS012701",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000785.1",
+         "donorID" : "McGill0127",
+         "assay" : 1,
+         "cell_type" : 692,
+         "id" : 27599
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "HepG2_SRF_Sg__HudsonAlpha_",
+         "species" : "human",
+         "assay" : 94,
+         "donorID" : "HepG2 SRF Sg (HudsonAlpha)",
+         "cell_type" : 299,
+         "id" : 19292
+      },
+      {
+         "id" : 19194,
+         "cell_type" : 305,
+         "assay" : 64,
+         "donorID" : "NH-A CTCF Sg (Broad)",
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "NH-A_CTCF_Sg__Broad_"
+      },
+      {
+         "cell_type" : 801,
+         "id" : 29016,
+         "donorID" : "S00KFV",
+         "assay" : 10,
+         "sampleID" : "ERS433943",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002694"
+      },
+      {
+         "assay" : 36,
+         "donorID" : "HAEpiC (UW)",
+         "cell_type" : 362,
+         "id" : 18283,
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "HAEpiC__UW_",
+         "species" : "human"
+      },
+      {
+         "assay" : 9,
+         "donorID" : "92",
+         "id" : 20712,
+         "cell_type" : 700,
+         "species" : "human",
+         "sampleID" : "SRS255269_92_700",
+         "epirr_id" : null,
+         "institution" : 5
+      },
+      {
+         "epirr_id" : "IHECRE00000174.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS222273",
+         "assay" : 9,
+         "donorID" : "S001MJ",
+         "id" : 17764,
+         "cell_type" : 818
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "HUVEC_POL2B_Sg__Broad_",
+         "id" : 19191,
+         "cell_type" : 303,
+         "donorID" : "HUVEC POL2B Sg (Broad)",
+         "assay" : 65
+      },
+      {
+         "cell_type" : 776,
+         "id" : 21662,
+         "assay" : 33,
+         "donorID" : "29",
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS120859_29_776",
+         "species" : "human"
+      },
+      {
+         "assay" : 2,
+         "donorID" : "N00031407013121",
+         "id" : 18250,
+         "cell_type" : 1,
+         "epirr_id" : "IHECRE00000078.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS534781"
+      },
+      {
+         "donorID" : "S00FTN",
+         "assay" : 9,
+         "cell_type" : 810,
+         "id" : 17981,
+         "sampleID" : "ERS422247",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000071.1"
+      },
+      {
+         "cell_type" : 777,
+         "id" : 22053,
+         "donorID" : "30",
+         "assay" : 9,
+         "sampleID" : "30_777",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null
+      },
+      {
+         "sampleID" : "MS040101",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : null,
+         "cell_type" : 647,
+         "id" : 28080,
+         "assay" : 1,
+         "donorID" : "McGill0401"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS433865",
+         "epirr_id" : "IHECRE00002697",
+         "institution" : 3,
+         "id" : 29206,
+         "cell_type" : 803,
+         "assay" : 10,
+         "donorID" : "S00JD2"
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS360527_332_644",
+         "species" : "human",
+         "assay" : 8,
+         "donorID" : "332",
+         "cell_type" : 644,
+         "id" : 20721
+      },
+      {
+         "cell_type" : 809,
+         "id" : 17583,
+         "donorID" : "ERS333897",
+         "assay" : 5,
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000018.1",
+         "sampleID" : "ERS333897",
+         "species" : "human"
+      },
+      {
+         "cell_type" : 852,
+         "id" : 17921,
+         "donorID" : "S00BJM",
+         "assay" : 5,
+         "sampleID" : "ERS358678",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000184.1"
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "ENCBS262AAA-ENCBS493TPA",
+         "species" : "human",
+         "cell_type" : 977,
+         "id" : 25600,
+         "assay" : 183,
+         "donorID" : "ENCDO000ADL"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "K562_RAD21_Pk__Stanford_",
+         "epirr_id" : null,
+         "institution" : 4,
+         "id" : 18973,
+         "cell_type" : 304,
+         "assay" : 89,
+         "donorID" : "K562 RAD21 Pk (Stanford)"
+      },
+      {
+         "donorID" : "S007DD",
+         "assay" : 10,
+         "cell_type" : 803,
+         "id" : 17860,
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000147.1",
+         "sampleID" : "ERS257432",
+         "species" : "human"
+      },
+      {
+         "sampleID" : "SRS267022_H-24111_735",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null,
+         "assay" : 184,
+         "donorID" : "H-24111",
+         "cell_type" : 735,
+         "id" : 22142
+      },
+      {
+         "cell_type" : 821,
+         "id" : 29593,
+         "assay" : 7,
+         "donorID" : "S00XHC",
+         "sampleID" : "ERS643198",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002218"
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS213631_SK443_490",
+         "species" : "human",
+         "cell_type" : 490,
+         "id" : 20008,
+         "assay" : 4,
+         "donorID" : "SK443"
+      },
+      {
+         "sampleID" : "MS002701",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000663.1",
+         "assay" : 3,
+         "donorID" : "McGill0027",
+         "cell_type" : 837,
+         "id" : 27271
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS114979_H-22727_728",
+         "epirr_id" : null,
+         "institution" : 5,
+         "assay" : 184,
+         "donorID" : "H-22727",
+         "id" : 22364,
+         "cell_type" : 728
+      },
+      {
+         "species" : "human",
+         "sampleID" : "CEMT0040.gDNA",
+         "epirr_id" : "IHECRE00000230.1",
+         "institution" : 1,
+         "assay" : 197,
+         "donorID" : "SW-TTP-156",
+         "id" : 28397,
+         "cell_type" : 699
+      },
+      {
+         "epirr_id" : "IHECRE00000004.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS150391",
+         "id" : 17606,
+         "cell_type" : 821,
+         "assay" : 5,
+         "donorID" : "C0010K"
+      },
+      {
+         "assay" : 8,
+         "donorID" : "CD3_39661",
+         "id" : 21075,
+         "cell_type" : 711,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS150992_CD3_39661_711"
+      },
+      {
+         "id" : 27070,
+         "cell_type" : 837,
+         "assay" : 1,
+         "donorID" : "McGill0007",
+         "epirr_id" : "IHECRE00000728.1",
+         "institution" : 1,
+         "species" : "human",
+         "sampleID" : "MS000701"
+      },
+      {
+         "donorID" : "UW_H22772",
+         "assay" : 9,
+         "cell_type" : 734,
+         "id" : 21770,
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS188621_UW_H22772_734",
+         "species" : "human"
+      },
+      {
+         "donorID" : "McGill0007",
+         "assay" : 9,
+         "id" : 27065,
+         "cell_type" : 837,
+         "species" : "human",
+         "sampleID" : "MS000701",
+         "epirr_id" : "IHECRE00000728.1",
+         "institution" : 1
+      },
+      {
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002514",
+         "sampleID" : "ERS523805",
+         "species" : "human",
+         "donorID" : "S00SHW",
+         "assay" : 10,
+         "cell_type" : 803,
+         "id" : 29139
+      },
+      {
+         "donorID" : "ENCDO000AAC",
+         "assay" : 8,
+         "id" : 26119,
+         "cell_type" : 299,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "ENCBS638AAA"
+      },
+      {
+         "assay" : 36,
+         "donorID" : "N00031406635321",
+         "id" : 18035,
+         "cell_type" : 819,
+         "species" : "human",
+         "sampleID" : "ERS534775",
+         "epirr_id" : "IHECRE00000077.1",
+         "institution" : 3
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "HepG2_HSF1_Pk__Stanford_",
+         "donorID" : "HepG2 HSF1 Pk (Stanford)",
+         "assay" : 163,
+         "id" : 18917,
+         "cell_type" : 299
+      },
+      {
+         "id" : 18228,
+         "cell_type" : 819,
+         "assay" : 2,
+         "donorID" : "N00031319896021",
+         "epirr_id" : "IHECRE00000085.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS534751"
+      },
+      {
+         "donorID" : "203-44",
+         "assay" : 5,
+         "id" : 28604,
+         "cell_type" : 867,
+         "species" : "human",
+         "sampleID" : "CEMT0031.gDNA",
+         "epirr_id" : "IHECRE00001004.1",
+         "institution" : 1
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS306621_STL003_466",
+         "species" : "human",
+         "cell_type" : 466,
+         "id" : 19845,
+         "donorID" : "STL003",
+         "assay" : 4
+      },
+      {
+         "cell_type" : 767,
+         "id" : 20615,
+         "donorID" : "STL002",
+         "assay" : 1,
+         "sampleID" : "SRS348370_STL002_767",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS227635",
+         "epirr_id" : "IHECRE00002578",
+         "institution" : 3,
+         "id" : 29395,
+         "cell_type" : 821,
+         "assay" : 10,
+         "donorID" : "S0031G"
+      },
+      {
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000026.1",
+         "sampleID" : "ERS255951",
+         "species" : "human",
+         "assay" : 4,
+         "donorID" : "pz_286",
+         "cell_type" : 843,
+         "id" : 18099
+      },
+      {
+         "cell_type" : 1003,
+         "id" : 25786,
+         "assay" : 3,
+         "donorID" : "ENCDO070AAA",
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "ENCBS050RNA",
+         "species" : "human"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "GM12878_RFX5_Sg__Stanford_",
+         "id" : 19371,
+         "cell_type" : 296,
+         "assay" : 127,
+         "donorID" : "GM12878 RFX5 Sg (Stanford)"
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000663.1",
+         "sampleID" : "MS002701",
+         "species" : "human",
+         "cell_type" : 837,
+         "id" : 27268,
+         "donorID" : "McGill0027",
+         "assay" : 4
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "HepG2_MAFF_Sg__Stanford_",
+         "id" : 19458,
+         "cell_type" : 299,
+         "assay" : 164,
+         "donorID" : "HepG2 MAFF Sg (Stanford)"
+      },
+      {
+         "id" : 25752,
+         "cell_type" : 965,
+         "assay" : 3,
+         "donorID" : "ENCDO064AAA",
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "ENCBS053RNA"
+      },
+      {
+         "sampleID" : "MS000601",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000886.1",
+         "donorID" : "McGill0006",
+         "assay" : 5,
+         "cell_type" : 837,
+         "id" : 27056
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000682.1",
+         "sampleID" : "MS000105",
+         "species" : "human",
+         "donorID" : "McGill0001",
+         "assay" : 1,
+         "cell_type" : 3,
+         "id" : 27011
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS415789_A21771_783",
+         "epirr_id" : null,
+         "institution" : 5,
+         "donorID" : "A21771",
+         "assay" : 1,
+         "id" : 20545,
+         "cell_type" : 783
+      },
+      {
+         "cell_type" : 298,
+         "id" : 18901,
+         "donorID" : "HeLa-S3 STAT1 Pk (Stanford)",
+         "assay" : 159,
+         "sampleID" : "HeLa-S3_STAT1_Pk__Stanford_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null
+      },
+      {
+         "cell_type" : 429,
+         "id" : 20163,
+         "assay" : 5,
+         "donorID" : "AY65",
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS290042_AY65_429",
+         "species" : "human"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "ENCBS019ENC",
+         "id" : 25712,
+         "cell_type" : 963,
+         "donorID" : "ENCDO011AAA",
+         "assay" : 183
+      },
+      {
+         "species" : "human",
+         "sampleID" : "MS002201",
+         "epirr_id" : "IHECRE00000665.1",
+         "institution" : 1,
+         "id" : 27209,
+         "cell_type" : 647,
+         "assay" : 9,
+         "donorID" : "McGill0022"
+      },
+      {
+         "sampleID" : "MS002002",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000922.1",
+         "donorID" : "McGill0020",
+         "assay" : 2,
+         "cell_type" : 835,
+         "id" : 27199
+      },
+      {
+         "id" : 17674,
+         "cell_type" : 850,
+         "assay" : 5,
+         "donorID" : "C003UQ",
+         "species" : "human",
+         "sampleID" : "ERS206391",
+         "epirr_id" : "IHECRE00000010.1",
+         "institution" : 3
+      },
+      {
+         "id" : 29806,
+         "cell_type" : 821,
+         "donorID" : "S00FPV",
+         "assay" : 7,
+         "species" : "human",
+         "sampleID" : "ERS422240",
+         "epirr_id" : "IHECRE00002343",
+         "institution" : 3
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS167274_Lib:MC:20101025:09--ChIP:MC:20101020:09:ES_cell_HUES_48:H3K36Me3_529",
+         "epirr_id" : null,
+         "institution" : 5,
+         "donorID" : "Lib:MC:20101025:09--ChIP:MC:20101020:09:ES_cell_HUES_48:H3K36Me3",
+         "assay" : 8,
+         "id" : 20340,
+         "cell_type" : 529
+      },
+      {
+         "epirr_id" : "IHECRE00002386",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS227659",
+         "assay" : 9,
+         "donorID" : "S00382",
+         "id" : 29094,
+         "cell_type" : 803
+      },
+      {
+         "assay" : 6,
+         "donorID" : "McGill0127",
+         "cell_type" : 1,
+         "id" : 27625,
+         "sampleID" : "MS012706",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000837.1"
+      },
+      {
+         "assay" : 6,
+         "donorID" : "ENCDO000ADP",
+         "cell_type" : 311,
+         "id" : 26026,
+         "sampleID" : "ENCBS266AAA",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "WI-38__UW_",
+         "id" : 18380,
+         "cell_type" : 423,
+         "assay" : 36,
+         "donorID" : "WI-38 (UW)"
+      },
+      {
+         "sampleID" : "SRS065943_CD19_6_26_08_545",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null,
+         "assay" : 7,
+         "donorID" : "CD19_6/26/08",
+         "cell_type" : 545,
+         "id" : 20758
+      },
+      {
+         "donorID" : "153",
+         "assay" : 33,
+         "cell_type" : 701,
+         "id" : 21768,
+         "sampleID" : "SRS255290_153_701",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null
+      },
+      {
+         "assay" : 184,
+         "donorID" : "H-24342",
+         "id" : 22149,
+         "cell_type" : 753,
+         "species" : "human",
+         "sampleID" : "SRS372829_H-24342_753",
+         "epirr_id" : null,
+         "institution" : 5
+      },
+      {
+         "species" : "human",
+         "sampleID" : "HepG2_HNF4G_Sg__HudsonAlpha_",
+         "epirr_id" : null,
+         "institution" : 4,
+         "id" : 19283,
+         "cell_type" : 299,
+         "assay" : 109,
+         "donorID" : "HepG2 HNF4G Sg (HudsonAlpha)"
+      },
+      {
+         "donorID" : "RO_01701",
+         "assay" : 185,
+         "id" : 22326,
+         "cell_type" : 717,
+         "species" : "human",
+         "sampleID" : "SRS183511_RO_01701_717",
+         "epirr_id" : null,
+         "institution" : 5
+      },
+      {
+         "assay" : 36,
+         "donorID" : "MCF-7 Duke (Duke)",
+         "cell_type" : 342,
+         "id" : 18405,
+         "sampleID" : "MCF-7_Duke__Duke_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null
+      },
+      {
+         "id" : 22384,
+         "cell_type" : 738,
+         "donorID" : "H-24005",
+         "assay" : 184,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS255684_H-24005_738"
+      },
+      {
+         "epirr_id" : "IHECRE00002210",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS523846",
+         "id" : 29775,
+         "cell_type" : 821,
+         "assay" : 5,
+         "donorID" : "S00SV4"
+      },
+      {
+         "cell_type" : 837,
+         "id" : 27308,
+         "assay" : 6,
+         "donorID" : "McGill0030",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000800.1",
+         "sampleID" : "MS003001",
+         "species" : "human"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS114974_RO_01549_488",
+         "epirr_id" : null,
+         "institution" : 5,
+         "id" : 22200,
+         "cell_type" : 488,
+         "assay" : 184,
+         "donorID" : "RO_01549"
+      },
+      {
+         "sampleID" : "SRS116565_YL123_426",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null,
+         "cell_type" : 426,
+         "id" : 20112,
+         "assay" : 9,
+         "donorID" : "YL123"
+      },
+      {
+         "id" : 17720,
+         "cell_type" : 804,
+         "assay" : 5,
+         "donorID" : "C0066P",
+         "epirr_id" : "IHECRE00000076.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS206601"
+      },
+      {
+         "cell_type" : 344,
+         "id" : 25642,
+         "donorID" : "ENCDO000AAZ",
+         "assay" : 183,
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "ENCBS423ENC",
+         "species" : "human"
+      },
+      {
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "HeLa-S3_TAF1_Sg__HudsonAlpha_",
+         "species" : "human",
+         "cell_type" : 298,
+         "id" : 19272,
+         "donorID" : "HeLa-S3 TAF1 Sg (HudsonAlpha)",
+         "assay" : 95
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS005528_HS1303_424",
+         "species" : "human",
+         "assay" : 186,
+         "donorID" : "HS1303",
+         "cell_type" : 424,
+         "id" : 20541
+      },
+      {
+         "donorID" : "S00JYY",
+         "assay" : 5,
+         "cell_type" : 821,
+         "id" : 29816,
+         "sampleID" : "ERS433902",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002454"
+      },
+      {
+         "cell_type" : 803,
+         "id" : 28020,
+         "assay" : 2,
+         "donorID" : "McGill0368",
+         "institution" : 1,
+         "epirr_id" : null,
+         "sampleID" : "MS036801",
+         "species" : "human"
+      },
+      {
+         "cell_type" : 772,
+         "id" : 21122,
+         "assay" : 3,
+         "donorID" : "CTL04",
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "CTL04_772",
+         "species" : "human"
+      },
+      {
+         "assay" : 10,
+         "donorID" : "S007F9",
+         "id" : 29054,
+         "cell_type" : 803,
+         "species" : "human",
+         "sampleID" : "ERS257446",
+         "epirr_id" : "IHECRE00002159",
+         "institution" : 3
+      },
+      {
+         "assay" : 9,
+         "donorID" : "STL001",
+         "cell_type" : 466,
+         "id" : 21732,
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS366511_STL001_466",
+         "species" : "human"
+      },
+      {
+         "cell_type" : 804,
+         "id" : 17663,
+         "assay" : 10,
+         "donorID" : "C002YM",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000035.1",
+         "sampleID" : "ERS164475",
+         "species" : "human"
+      },
+      {
+         "id" : 18802,
+         "cell_type" : 298,
+         "donorID" : "HeLa-S3 POLR2A Pk (UTA)",
+         "assay" : 65,
+         "species" : "human",
+         "sampleID" : "HeLa-S3_POLR2A_Pk__UTA_",
+         "epirr_id" : null,
+         "institution" : 4
+      },
+      {
+         "sampleID" : "ERS433785",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000184.1",
+         "cell_type" : 852,
+         "id" : 17572,
+         "donorID" : "S00BJM",
+         "assay" : 1
+      },
+      {
+         "species" : "human",
+         "sampleID" : "MS003301",
+         "epirr_id" : "IHECRE00000714.1",
+         "institution" : 1,
+         "id" : 27313,
+         "cell_type" : 836,
+         "assay" : 10,
+         "donorID" : "McGill0033"
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000227.1",
+         "sampleID" : "CEMT0009.gDNA",
+         "species" : "human",
+         "cell_type" : 694,
+         "id" : 28381,
+         "donorID" : "CEMT0009.gDNA",
+         "assay" : 7
+      },
+      {
+         "donorID" : "C0011I",
+         "assay" : 7,
+         "cell_type" : 821,
+         "id" : 17614,
+         "institution" : 3,
+         "epirr_id" : "IHECRE00000159.1",
+         "sampleID" : "ERS150389",
+         "species" : "human"
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "HepG2_UW__UW_",
+         "id" : 18391,
+         "cell_type" : 299,
+         "donorID" : "HepG2 UW (UW)",
+         "assay" : 36
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS065938_pancreatic_islets_normal_3_27_09_768",
+         "species" : "human",
+         "assay" : 8,
+         "donorID" : "pancreatic_islets_normal_3/27/09",
+         "cell_type" : 768,
+         "id" : 21596
+      },
+      {
+         "donorID" : "C002YM",
+         "assay" : 7,
+         "id" : 17664,
+         "cell_type" : 804,
+         "species" : "human",
+         "sampleID" : "ERS164475",
+         "epirr_id" : "IHECRE00000035.1",
+         "institution" : 3
+      },
+      {
+         "assay" : 10,
+         "donorID" : "S00PDF",
+         "cell_type" : 801,
+         "id" : 28940,
+         "sampleID" : "ERS487538",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002476"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "CEMT0041.gDNA",
+         "epirr_id" : "IHECRE00000222.1",
+         "institution" : 1,
+         "id" : 28472,
+         "cell_type" : 699,
+         "donorID" : "SW-TTP-156",
+         "assay" : 4
+      },
+      {
+         "donorID" : "S00T4H",
+         "assay" : 9,
+         "cell_type" : 821,
+         "id" : 29465,
+         "sampleID" : "ERS642887",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002327"
+      },
+      {
+         "donorID" : "ENCDO269AAA",
+         "assay" : 5,
+         "id" : 26005,
+         "cell_type" : 909,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "ENCBS339AAA"
+      },
+      {
+         "cell_type" : 821,
+         "id" : 29329,
+         "donorID" : "S002MF",
+         "assay" : 10,
+         "sampleID" : "ERS222462",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002291"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS188622_UW_H22676_645",
+         "epirr_id" : null,
+         "institution" : 5,
+         "id" : 21575,
+         "cell_type" : 645,
+         "assay" : 9,
+         "donorID" : "UW_H22676"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS255273_112_638",
+         "epirr_id" : null,
+         "institution" : 5,
+         "donorID" : "112",
+         "assay" : 5,
+         "id" : 21921,
+         "cell_type" : 638
+      },
+      {
+         "id" : 20292,
+         "cell_type" : 524,
+         "assay" : 7,
+         "donorID" : "Lib:XZ:20101004:11--ChIP:XZ:20100930:11:ES_cell_HUES_6:H3K27Me3",
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS167269_Lib:XZ:20101004:11--ChIP:XZ:20100930:11:ES_cell_HUES_6:H3K27Me3_524"
+      },
+      {
+         "epirr_id" : "IHECRE00000132.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS365966",
+         "id" : 17893,
+         "cell_type" : 843,
+         "donorID" : "pz_289",
+         "assay" : 8
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS487469",
+         "epirr_id" : "IHECRE00002709",
+         "institution" : 3,
+         "assay" : 7,
+         "donorID" : "S00P04",
+         "id" : 29892,
+         "cell_type" : 821
+      },
+      {
+         "id" : 19129,
+         "cell_type" : 327,
+         "donorID" : "HCT-116 POL2 Pk (UCD)",
+         "assay" : 65,
+         "species" : "human",
+         "sampleID" : "HCT-116_POL2_Pk__UCD_",
+         "epirr_id" : null,
+         "institution" : 4
+      },
+      {
+         "epirr_id" : "IHECRE00002551",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS523845",
+         "donorID" : "S00SV4",
+         "assay" : 10,
+         "id" : 29143,
+         "cell_type" : 803
+      },
+      {
+         "sampleID" : "K562_BRF2_Sg__Harvard_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null,
+         "cell_type" : 304,
+         "id" : 19482,
+         "donorID" : "K562 BRF2 Sg (Harvard)",
+         "assay" : 147
+      },
+      {
+         "sampleID" : "ERS227736",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002475",
+         "cell_type" : 821,
+         "id" : 29340,
+         "assay" : 9,
+         "donorID" : "S003R1"
+      },
+      {
+         "donorID" : "SK16",
+         "assay" : 52,
+         "id" : 21407,
+         "cell_type" : 425,
+         "species" : "human",
+         "sampleID" : "SRS024802_SK16_425",
+         "epirr_id" : null,
+         "institution" : 5
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ENCBS025RNA",
+         "epirr_id" : null,
+         "institution" : 4,
+         "assay" : 183,
+         "donorID" : "ENCDO041AAA",
+         "id" : 25559,
+         "cell_type" : 832
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS267131_AK420_462",
+         "id" : 21529,
+         "cell_type" : 462,
+         "donorID" : "AK420",
+         "assay" : 41
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "GM12873_CTCF_Sg__UW_",
+         "id" : 19552,
+         "cell_type" : 674,
+         "donorID" : "GM12873 CTCF Sg (UW)",
+         "assay" : 64
+      },
+      {
+         "epirr_id" : "IHECRE00002404",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS441493",
+         "assay" : 7,
+         "donorID" : "S00M0G",
+         "id" : 29504,
+         "cell_type" : 821
+      },
+      {
+         "epirr_id" : "IHECRE00000014.1",
+         "institution" : 3,
+         "species" : "human",
+         "sampleID" : "ERS353039",
+         "assay" : 7,
+         "donorID" : "UMCG_2012-082",
+         "id" : 17830,
+         "cell_type" : 843
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000714.1",
+         "sampleID" : "MS003301",
+         "species" : "human",
+         "assay" : 5,
+         "donorID" : "McGill0033",
+         "cell_type" : 836,
+         "id" : 27317
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS139705_RRBS360-361_424",
+         "assay" : 57,
+         "donorID" : "RRBS360-361",
+         "id" : 20641,
+         "cell_type" : 424
+      },
+      {
+         "cell_type" : 909,
+         "id" : 26016,
+         "assay" : 5,
+         "donorID" : "ENCDO001AAA",
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "ENCBS004ENC-ENCBS485QDY",
+         "species" : "human"
+      },
+      {
+         "sampleID" : "MS027701",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000799.1",
+         "assay" : 2,
+         "donorID" : "McGill0277",
+         "cell_type" : 803,
+         "id" : 27836
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000705.1",
+         "sampleID" : "MS023901",
+         "species" : "human",
+         "cell_type" : 803,
+         "id" : 27779,
+         "assay" : 10,
+         "donorID" : "McGill0239"
+      },
+      {
+         "assay" : 117,
+         "donorID" : "K562 ZBTB7A Sg (HudsonAlpha)",
+         "id" : 19326,
+         "cell_type" : 304,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "K562_ZBTB7A_Sg__HudsonAlpha_"
+      },
+      {
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS267130_AK283_490",
+         "species" : "human",
+         "assay" : 58,
+         "donorID" : "AK283",
+         "cell_type" : 490,
+         "id" : 21538
+      },
+      {
+         "sampleID" : "MS024001",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00000758.1",
+         "donorID" : "McGill0240",
+         "assay" : 187,
+         "cell_type" : 803,
+         "id" : 27782
+      },
+      {
+         "institution" : 1,
+         "epirr_id" : null,
+         "sampleID" : "MS040202",
+         "species" : "human",
+         "donorID" : "McGill0402",
+         "assay" : 1,
+         "cell_type" : 647,
+         "id" : 28098
+      },
+      {
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "HuFNSC04_491",
+         "id" : 21318,
+         "cell_type" : 491,
+         "assay" : 3,
+         "donorID" : "HuFNSC04"
+      },
+      {
+         "id" : 17643,
+         "cell_type" : 801,
+         "assay" : 9,
+         "donorID" : "C00280",
+         "species" : "human",
+         "sampleID" : "ERS158622",
+         "epirr_id" : "IHECRE00000083.1",
+         "institution" : 3
+      },
+      {
+         "species" : "human",
+         "sampleID" : "SRS415796_CTL02_772",
+         "epirr_id" : null,
+         "institution" : 5,
+         "assay" : 4,
+         "donorID" : "CTL02",
+         "id" : 19928,
+         "cell_type" : 772
+      },
+      {
+         "sampleID" : "SRS255292_62_449",
+         "species" : "human",
+         "institution" : 5,
+         "epirr_id" : null,
+         "donorID" : "62",
+         "assay" : 9,
+         "cell_type" : 449,
+         "id" : 20714
+      },
+      {
+         "id" : 21176,
+         "cell_type" : 772,
+         "assay" : 3,
+         "donorID" : "CTL02",
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "CTL02_772"
+      },
+      {
+         "cell_type" : 474,
+         "id" : 20760,
+         "donorID" : "skin02",
+         "assay" : 7,
+         "institution" : 5,
+         "epirr_id" : null,
+         "sampleID" : "SRS265437_skin02_474",
+         "species" : "human"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS358684",
+         "epirr_id" : "IHECRE00000114.1",
+         "institution" : 3,
+         "donorID" : "S00BKK",
+         "assay" : 10,
+         "id" : 17926,
+         "cell_type" : 820
+      },
+      {
+         "assay" : 64,
+         "donorID" : "WERI-Rb-1 CTCF Sg (UW)",
+         "cell_type" : 392,
+         "id" : 19574,
+         "institution" : 4,
+         "epirr_id" : null,
+         "sampleID" : "WERI-Rb-1_CTCF_Sg__UW_",
+         "species" : "human"
+      },
+      {
+         "donorID" : "K562 TBP Sg (Stanford)",
+         "assay" : 130,
+         "id" : 19519,
+         "cell_type" : 304,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "K562_TBP_Sg__Stanford_"
+      },
+      {
+         "assay" : 10,
+         "donorID" : "AKCC70",
+         "cell_type" : 1072,
+         "id" : 28734,
+         "sampleID" : "CEMT0058.gDNA",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : "IHECRE00001006.1"
+      },
+      {
+         "id" : 20191,
+         "cell_type" : 791,
+         "assay" : 7,
+         "donorID" : "DNA_Lib_348",
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS255306_DNA_Lib_348_791"
+      },
+      {
+         "id" : 19903,
+         "cell_type" : 472,
+         "donorID" : "skin01",
+         "assay" : 4,
+         "epirr_id" : null,
+         "institution" : 5,
+         "species" : "human",
+         "sampleID" : "SRS188630_skin01_472"
+      },
+      {
+         "sampleID" : "HRE_CTCF_Sg__UW_",
+         "species" : "human",
+         "institution" : 4,
+         "epirr_id" : null,
+         "donorID" : "HRE CTCF Sg (UW)",
+         "assay" : 64,
+         "cell_type" : 334,
+         "id" : 19568
+      },
+      {
+         "sampleID" : "ERS523682",
+         "species" : "human",
+         "institution" : 3,
+         "epirr_id" : "IHECRE00002499",
+         "cell_type" : 821,
+         "id" : 29572,
+         "donorID" : "S00R9F",
+         "assay" : 9
+      },
+      {
+         "cell_type" : 647,
+         "id" : 28077,
+         "assay" : 6,
+         "donorID" : "McGill0401",
+         "sampleID" : "MS040101",
+         "species" : "human",
+         "institution" : 1,
+         "epirr_id" : null
+      },
+      {
+         "id" : 19566,
+         "cell_type" : 332,
+         "donorID" : "HPAF CTCF Sg (UW)",
+         "assay" : 64,
+         "epirr_id" : null,
+         "institution" : 4,
+         "species" : "human",
+         "sampleID" : "HPAF_CTCF_Sg__UW_"
+      },
+      {
+         "species" : "human",
+         "sampleID" : "ERS227613",
+         "epirr_id" : "IHECRE00002257",
+         "institution" : 3,
+         "id" : 29332,
+         "cell_type" : 801,
+         "donorID" : "S002WW",
+         "assay" : 10
+      },
+      {
+         "id" : 18746,
+         "cell_type" : 299,
+         "assay" : 90,
+         "donorID" : "HepG2 RXRA Pk (HudsonAlpha)",
+         "species" : "human",
+         "sampleID" : "HepG2_RXRA_Pk__HudsonAlpha_",
+         "epirr_id" : null,
+         "institution" : 4
+      }
+   ]
+}

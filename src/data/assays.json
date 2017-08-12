@@ -1,0 +1,1297 @@
+{
+"assay_category": [
+
+	{
+	    "id": 1,
+	    "name": "Methylome",
+	    "priority": "2"
+	}
+	,
+	{
+	    "id": 2,
+	    "name": "Transcriptome",
+	    "priority": "3"
+	}
+	,
+	{
+	    "id": 3,
+	    "name": "Histone",
+	    "priority": "1"
+	}
+	,
+	{
+	    "id": 4,
+	    "name": "Other",
+	    "priority": "6"
+	}
+	,
+	{
+	    "id": 5,
+	    "name": "Regulome",
+	    "priority": "4"
+	}
+	,
+	{
+	    "id": 6,
+	    "name": "TFBS",
+	    "priority": "5"
+	}
+	
+],
+"assay": [
+
+	{
+	    "id": 1,
+	    "name": "WGB-Seq",
+	    "assay_category": 1,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 2,
+	    "name": "RNA-Seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 3,
+	    "name": "smRNA-Seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 4,
+	    "name": "Input",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 5,
+	    "name": "H3K4me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 6,
+	    "name": "H3K9me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 7,
+	    "name": "H3K27me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 8,
+	    "name": "H3K36me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 9,
+	    "name": "H3K4me1",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 10,
+	    "name": "H3K27ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 30,
+	    "name": "H2AZ",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 31,
+	    "name": "H3K4me2",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 32,
+	    "name": "H3K79me2",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 33,
+	    "name": "H3K9ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 34,
+	    "name": "H4K20me1",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 35,
+	    "name": "H3K9me1",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 36,
+	    "name": "DNase-Seq",
+	    "assay_category": 5,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 37,
+	    "name": "H2A_Zac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 38,
+	    "name": "H3K9_14ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 39,
+	    "name": "miRNA-Seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 40,
+	    "name": "H2BK12ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 41,
+	    "name": "H2AK5ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 42,
+	    "name": "H2BK20ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 43,
+	    "name": "H2BK5ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 44,
+	    "name": "MRE-Seq",
+	    "assay_category": 1,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 45,
+	    "name": "H2BK15ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 46,
+	    "name": "H4K5ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 47,
+	    "name": "DGF",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 48,
+	    "name": "H3K23ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 50,
+	    "name": "H4K12ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 51,
+	    "name": "H4K91ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 52,
+	    "name": "H3K4ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 53,
+	    "name": "H3T11ph",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 54,
+	    "name": "H3K23me2",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 55,
+	    "name": "H2BK120ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 56,
+	    "name": "H3K79me1",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 57,
+	    "name": "RRBS",
+	    "assay_category": 1,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 58,
+	    "name": "H3K18ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 59,
+	    "name": "H3K56ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 60,
+	    "name": "H2AK9ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 61,
+	    "name": "H3K14ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 62,
+	    "name": "H4K8ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 63,
+	    "name": "FAIRE-Seq",
+	    "assay_category": 5,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 64,
+	    "name": "CTCF",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 65,
+	    "name": "POLR2A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 66,
+	    "name": "NR3C1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 67,
+	    "name": "USF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 68,
+	    "name": "ESR1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 69,
+	    "name": "FOXA1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 70,
+	    "name": "ATF3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 71,
+	    "name": "BATF",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 72,
+	    "name": "BCL11A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 73,
+	    "name": "BCL3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 74,
+	    "name": "BCLAF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 75,
+	    "name": "EBF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 76,
+	    "name": "EGR1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 77,
+	    "name": "ELF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 78,
+	    "name": "ETS1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 79,
+	    "name": "GABPA",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 80,
+	    "name": "IRF4",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 81,
+	    "name": "MEF2A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 82,
+	    "name": "MEF2C",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 83,
+	    "name": "REST",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 84,
+	    "name": "EP300",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 85,
+	    "name": "PAX5",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 86,
+	    "name": "PBX3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 87,
+	    "name": "POU2F2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 88,
+	    "name": "SPI1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 89,
+	    "name": "RAD21",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 90,
+	    "name": "RXRA",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 91,
+	    "name": "SIN3A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 92,
+	    "name": "SIX5",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 93,
+	    "name": "SP1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 94,
+	    "name": "SRF",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 95,
+	    "name": "TAF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 96,
+	    "name": "TCF12",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 97,
+	    "name": "YY1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 98,
+	    "name": "ZBTB33",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 99,
+	    "name": "ZEB1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 100,
+	    "name": "HDAC2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 101,
+	    "name": "JUND",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 102,
+	    "name": "NANOG",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 103,
+	    "name": "POU5F1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 104,
+	    "name": "TAF7",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 105,
+	    "name": "BHLHE40",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 106,
+	    "name": "FOSL2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 107,
+	    "name": "FOXA2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 108,
+	    "name": "HNF4A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 109,
+	    "name": "HNF4G",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 110,
+	    "name": "CTCFL",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 111,
+	    "name": "E2F6",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 112,
+	    "name": "FOSL1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 113,
+	    "name": "GATA2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 114,
+	    "name": "MAX",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 115,
+	    "name": "SP2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 116,
+	    "name": "THAP1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 117,
+	    "name": "ZBTB7A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 118,
+	    "name": "GATA3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 119,
+	    "name": "MYC",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 120,
+	    "name": "NFKB1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 121,
+	    "name": "BRCA1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 122,
+	    "name": "FOS",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 123,
+	    "name": "CHD2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 124,
+	    "name": "NFE2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 125,
+	    "name": "NRF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 126,
+	    "name": "POLR3G",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 127,
+	    "name": "RFX5",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 128,
+	    "name": "SMC3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 129,
+	    "name": "STAT3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 130,
+	    "name": "TBP",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 131,
+	    "name": "NR2C2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 132,
+	    "name": "USF2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 133,
+	    "name": "WRNIP1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 134,
+	    "name": "ZNF143",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 135,
+	    "name": "ZZZ3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 136,
+	    "name": "JUN",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 137,
+	    "name": "CTBP2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 138,
+	    "name": "SUZ12",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 139,
+	    "name": "TCF7L2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 140,
+	    "name": "TRIM28",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 141,
+	    "name": "TFAP2A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 142,
+	    "name": "TFAP2C",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 143,
+	    "name": "SMARCC1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 144,
+	    "name": "SMARCC2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 145,
+	    "name": "BDP1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 146,
+	    "name": "BRF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 147,
+	    "name": "BRF2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 148,
+	    "name": "SMARCA4",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 149,
+	    "name": "CEBPB",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 150,
+	    "name": "E2F1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 151,
+	    "name": "E2F4",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 152,
+	    "name": "ELK4",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 153,
+	    "name": "GTF2F1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 154,
+	    "name": "SMARCB1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 155,
+	    "name": "IRF3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 156,
+	    "name": "MXI1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 157,
+	    "name": "PRDM1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 158,
+	    "name": "POLR3A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 159,
+	    "name": "STAT1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 160,
+	    "name": "GTF3C2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 161,
+	    "name": "ZNF274",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 162,
+	    "name": "ESRRA",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 163,
+	    "name": "HSF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 164,
+	    "name": "MAFF",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 165,
+	    "name": "MAFK",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 166,
+	    "name": "PPARGC1A",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 167,
+	    "name": "SREBF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 168,
+	    "name": "GATA1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 169,
+	    "name": "SETDB1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 170,
+	    "name": "ZNF263",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 171,
+	    "name": "CCNT2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 172,
+	    "name": "GTF2B",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 173,
+	    "name": "HMGN3",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 174,
+	    "name": "IRF1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 175,
+	    "name": "RDBP",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 176,
+	    "name": "NFYA",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 177,
+	    "name": "NFYB",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 178,
+	    "name": "SIRT6",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 179,
+	    "name": "STAT2",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 180,
+	    "name": "TAL1",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 181,
+	    "name": "HDAC8",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 182,
+	    "name": "JUNB",
+	    "assay_category": 6,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 183,
+	    "name": "mRNA-Seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 1
+	}
+	,
+	{
+	    "id": 184,
+	    "name": "Chromatin_Acc",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 185,
+	    "name": "Footprinting",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 186,
+	    "name": "MeDIP-Seq",
+	    "assay_category": 1,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 187,
+	    "name": "ATAC-Seq",
+	    "assay_category": 5,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 188,
+	    "name": "MCC-Seq",
+	    "assay_category": 1,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 189,
+	    "name": "NOMe-Seq",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 190,
+	    "name": "snRNA-Seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 191,
+	    "name": "Chipmentation H3K4me1",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 192,
+	    "name": "Chipmentation H3K4me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 193,
+	    "name": "Chipmentation H3K27me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 194,
+	    "name": "Chipmentation H3K27ac",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 195,
+	    "name": "Chipmentation H3K9me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 196,
+	    "name": "Chipmentation H3K36me3",
+	    "assay_category": 3,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 197,
+	    "name": "WGS",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 198,
+	    "name": "flRNA-seq",
+	    "assay_category": 2,
+	    "is_ihec_reference_assay": 0
+	}
+	,
+	{
+	    "id": 199,
+	    "name": "NA",
+	    "assay_category": 4,
+	    "is_ihec_reference_assay": 0
+	}
+	
+]
+}
