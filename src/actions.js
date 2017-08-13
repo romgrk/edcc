@@ -9,6 +9,9 @@ import {
     prepare
   , tagDatasets
   , selectionMapFrom
+  , normalizeData
+  , generateGroupedMaps
+  , generateGroupedMapsForKeys
 } from './models';
 import {
     fetchCellTypes
@@ -80,18 +83,36 @@ export const fetchData = () => {
 
       const donorIds = selectionMapFrom(datasetsData.dataset, 'donorID')
 
-      const datasets = prepare(tagDatasets(datasetsData.dataset, cellTypes, assays))
 
-      console.log(datasets)
+
+      const datasets = tagDatasets(datasetsData.dataset, cellTypes, assays)
+
+      const groupByKeys = [
+        'institution',
+        'cell_type',
+        'cell_type_category',
+        'assay',
+        'assay_category',
+        'donorID',
+        'epirr_id',
+        'sampleID'
+      ]
+
+      const normalizedDatasets = {
+        ...normalizeData(datasets),
+        by: generateGroupedMapsForKeys(datasets, groupByKeys)
+      }
+
+      console.log(normalizedDatasets)
 
       dispatch(createAction(DATA.RECEIVE, {
+        datasets: normalizedDatasets,
         cellTypes,
         cellTypeCategories,
         assays,
         assayCategories,
         institutions,
         otherSettings,
-        datasets,
         epirrIds,
         donorIds
       }))

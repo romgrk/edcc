@@ -7,8 +7,11 @@ import {
   path,
   sortBy,
   groupBy,
-  uniq
+  indexBy,
+  uniq,
 } from 'ramda';
+
+import { getOrElse } from './utils';
 
 const DEFAULT_SELECTION_VALUE = true
 
@@ -16,7 +19,7 @@ const DEFAULT_SELECTION_VALUE = true
 export const selectionMapFrom = (xs, key) =>
   xs.reduce((acc, cur) => {
     const id = cur[key] || 'Unknown'
-    cur[key] = id
+    cur[key] = id /* mutation */
     acc[id] = { label: id, selected: DEFAULT_SELECTION_VALUE }
     return acc
   }, {})
@@ -25,20 +28,66 @@ export const assocSelected = xs =>
   xs.map(x => assoc('selected', DEFAULT_SELECTION_VALUE, x))
 
 // Transforms data into a more usable format
-export const prepare = compose(indexBy, assocSelected)
+export const prepare = compose(indexBy(prop('id')), assocSelected)
+
+// Transforms data into a more usable format
+export function normalizeData(data) {
+  const list = []
+  const byId = data.reduce((acc, cur) => {
+    list.push(cur.id)
+    acc[cur.id] = cur
+    return acc
+  }, {})
+  return { byId, list }
+}
+
+export function generateGroupedMaps(datasets, description) {
+  const descriptionEntries = Object.entries(description)
+
+  const maps = descriptionEntries.reduce((acc, [name, key]) => {
+    acc[name] = {}
+    return acc
+  }, {})
+
+  datasets.forEach(set => {
+    descriptionEntries.forEach(([name, key]) => {
+      const index = set[key]
+      if (!maps[name][index])
+        maps[name][index] = []
+      maps[name][index].push(set.id)
+    })
+  })
+
+  return maps
+}
+
+export function generateGroupedMapsForKeys(datasets, keys) {
+  const maps = keys.reduce((acc, key) => {
+    acc[key] = {}
+    return acc
+  }, {})
+
+  datasets.forEach(set => {
+    keys.forEach(key => {
+      const index = set[key]
+      if (!maps[key][index])
+        maps[key][index] = []
+      maps[key][index].push(set.id)
+    })
+  })
+
+  return maps
+}
+
 
 // Adds some informations on datasets
 export const tagDatasets = (datasets, cellTypes, assays) =>
   datasets.map(set => {
     set.cell_type_category =
-      Maybe.fromNullable(cellTypes[set.cell_type])
-           .map(prop('cell_type_category'))
-           .getOrElse(null)
+      getOrElse(cellTypes[set.cell_type], 'cell_type_category', null)
 
     set.assay_category =
-      Maybe.fromNullable(assays[set.assay])
-           .map(prop('assay_category'))
-           .getOrElse(null)
+      getOrElse(assays[set.assay], 'assay_category', null)
 
     return set
   })
@@ -54,6 +103,7 @@ export const generateGridMap = sets =>
     return acc
   }, {})
 
+
 // Returns the list of selected sets
 export const getSelectedSets = data => {
   const {
@@ -65,24 +115,35 @@ export const getSelectedSets = data => {
     cellTypeCategories,
   } = data
 
-  return Object.values(datasets).filter(set => {
-    if (!institutions[set.institution].selected)
+  return Object.values(datasets.byId).filter(set => {
+    const isInstitutionSelected =
+      getOrElse(
+        institutions[set.institution],
+        'selected',
+        false
+      )
+
+    if (!isInstitutionSelected)
       return false
 
     const cellTypeCategoryId = set.cell_type_category
     const isCellTypeCategorySelected =
-      Maybe.fromNullable(prop(cellTypeCategoryId, cellTypeCategories))
-      .map(prop('selected'))
-      .getOrElse(false)
+      getOrElse(
+        prop(cellTypeCategoryId, cellTypeCategories),
+        'selected',
+        false
+      )
 
     if (!isCellTypeCategorySelected)
       return false
 
     const assayCategoryId = set.assay_category
     const isAssayCategorySelected =
-      Maybe.fromNullable(prop(assayCategoryId, assayCategories))
-      .map(prop('selected'))
-      .getOrElse(false)
+      getOrElse(
+        prop(assayCategoryId, assayCategories),
+        'selected',
+        false
+      )
 
     if (!isAssayCategorySelected)
       return false
@@ -91,17 +152,4 @@ export const getSelectedSets = data => {
   })
 }
 
-export function asBooleanMap(data, key) {
-  return data.reduce((acc, cur) => {
-    acc[cur[key]] = false
-    return acc
-  }, {})
-}
-
-export function indexBy(xs, key = 'id') {
-  return xs.reduce((acc, cur) => {
-    acc[cur[key]] = cur
-    return acc
-  }, {})
-}
 

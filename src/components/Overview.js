@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
 import { compose } from 'ramda';
+
+import { getOrElse } from '../utils';
 import { selectOverview } from '../actions';
 import {
   overviewOptions,
@@ -22,9 +23,12 @@ const countByKey = (xs, key) =>
     return acc
   }, {})
 
+const midAngle = (d) =>
+  d.startAngle + (d.endAngle - d.startAngle) / 2
 
 const mapStateToProps = state => ({
   selectedOverview:   state.ui.overview,
+  datasets:           state.data.datasets,
   selectedSets:       state.data.selectedSets,
   donorIds:           state.data.donorIds,
   epirrIds:           state.data.epirrIds,
@@ -35,6 +39,7 @@ const mapStateToProps = state => ({
   assayCategories:    state.data.assayCategories,
   institutions:       state.data.institutions,
   otherSettings:      state.data.otherSettings,
+  //...state.data
 })
 const mapDispatchToProps = dispatch => ({
   selectOverview: compose(dispatch, selectOverview)
@@ -43,22 +48,27 @@ const mapDispatchToProps = dispatch => ({
 class Overview extends React.Component {
 
   update() {
-    const width = 300
+    const width  = this.node.clientWidth
     const height = 150
-    const radius = Math.min(width, height) / 2
+    const radius = (Math.min(width, height) / 2) - 20
+    const minVisibleAngle = 0.5
 
-    const { selectedSets, key, selectedOverview } = this.props
+    const { selectedSets, selectedOverview } = this.props
 
     const dataByKey = countByKey(selectedSets, selectedOverview.key)
 
+    const getLabelForID = id => {
+      switch (selectedOverview.key) {
+        case 'institution': return getOrElse(this.props.institutions[id], 'name', 'Unknown')
+        case 'assay_category': return getOrElse(this.props.assayCategories[id], 'name', 'Unknown')
+        case 'cell_type_category': return getOrElse(this.props.cellTypeCategories[id], 'name', 'Unknown')
+        default: return 'Unkown'
+      }
+    }
+
     const data =
-      Object.entries(dataByKey).reduce((acc, [label, value]) =>
-        acc.concat({ label, value }), [])
-
-
-    const color = d3.scaleOrdinal()
-      .domain([0, data.length || 1])
-      .range(d3.schemeCategory20b)
+      Object.entries(dataByKey).reduce((acc, [id, value]) =>
+        acc.concat({ id, value, label: getLabelForID(id) }), [])
 
     while (this.node.firstElementChild)
       this.node.removeChild(this.node.firstElementChild)
@@ -69,27 +79,79 @@ class Overview extends React.Component {
       .attr('width', width)
       .attr('height', height)
       .append('g')
-      .attr('transform', `translate(${width / 2}, ${height / 2})`)
+        .attr('transform', `translate(${width / 2}, ${height / 2})`)
+
+    svg.append('g')
+      .attr('class', 'slices')
+    svg.append('g')
+      .attr('class', 'labels')
+    svg.append('g')
+      .attr('class', 'counts')
 
     const arc = d3.arc()
-      .innerRadius(radius - 20)
+      .innerRadius(radius - 30)
       .outerRadius(radius)
+
+    const labelArc = d3.arc()
+      .innerRadius(radius)
+      .outerRadius(radius + 30)
 
     const pie = d3.pie()
       .value(d => d.value)
       .sort(null)
 
-    const selection = svg.selectAll('path')
+    const slices = svg.select('.slices')
+      .selectAll('path')
       .data(pie(data))
 
-    const path = selection
-      .enter()
-        .append('path')
-        .attr('d', arc)
-        .attr('fill', (d, i) => colorScale(d.data.value))
+    slices.enter()
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', d => colorScale(d.data.id))
 
-    selection.exit()
-        .remove()
+    const opacity = d => {
+      const diff = d.endAngle - d.startAngle
+      return (diff < minVisibleAngle) ? 0 : 1
+    }
+
+    const labels = svg.select('.labels')
+      .selectAll('text')
+      .data(pie(data))
+
+    labels.enter()
+      .append('text')
+      .attr('transform', (d) => {
+        const pos = labelArc.centroid(d)
+        //pos[0]  = radius * (midAngle(d) < Math.PI ? 1 : -1)
+        return 'translate(' + pos + ')'
+      })
+      .style('text-anchor', (d) =>
+        midAngle(d) < Math.PI ? 'start' : 'end')
+      .attr('dy', '.35em')
+      .attr('dx', '.35em')
+      .style('fill-opacity', opacity)
+      .attr('font-size', '10px')
+      .attr('fill', d => colorScale(d.data.id))
+      .text(d => d.data.label)
+
+    const counts = svg.select('.counts')
+      .selectAll('text')
+      .data(pie(data))
+
+    counts.enter()
+      .append('text')
+      .attr('transform', (d) => {
+        const pos = arc.centroid(d)
+        //pos[0]  = radius * (midAngle(d) < Math.PI ? 1 : -1)
+        return 'translate(' + pos + ')'
+      })
+      .style('text-anchor', 'middle')
+      .attr('dy', '.35em')
+      .attr('dx', '.35em')
+      .style('fill-opacity', opacity)
+      .attr('font-size', '10px')
+      .attr('fill', '#fff')
+      .text(d => d.data.value)
   }
 
   componentDidMount() {

@@ -1,7 +1,7 @@
 
 import { scaleOrdinal, schemeCategory20b } from 'd3';
 
-export const colorScale = scaleOrdinal()
+export const colorScale = window.colorScale = scaleOrdinal()
   .domain([0, schemeCategory20b.length])
   .range(schemeCategory20b)
 

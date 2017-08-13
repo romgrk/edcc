@@ -18,6 +18,6 @@ export function fetchInstitutions() {
 }
 
 export function fetchDatasets() {
-  return Promise.delay(2000)
+  return Promise.delay(500)
     .then(() => Promise.resolve(datasetsData))
 }

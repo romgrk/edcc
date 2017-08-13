@@ -1,14 +1,24 @@
 import React from 'react';
 import cx from 'classname';
 
-export default ({ data, labelBy, title, folded, onChange, onToggle, onToggleAll }) => {
+export default (props) => {
+  const {
+    data,
+    labelBy,
+    render,
+    title,
+    folded,
+    onChange,
+    onToggle,
+    onToggleAll
+  } = props
   const entries = Object.entries(data || [])
   const areAllChecked = entries.every(([id, item]) => item.selected)
   const areSomeChecked = areAllChecked || entries.some(([id, item]) => item.selected)
 
   return (
     <div className={ folded ? 'List folded' : 'List' }>
-      <div 
+      <div
         className='title --clickable'
         onClick={() => onToggle(folded)} >
         { title }
@@ -27,12 +37,12 @@ export default ({ data, labelBy, title, folded, onChange, onToggle, onToggleAll 
       { entries.map(([id, item]) =>
         <li key={id}>
           <label className={item.selected ? 'checked' : 'not-checked'}>
-            <input 
-              type='checkbox' 
+            <input
+              type='checkbox'
               checked={item.selected}
               onChange={ev => onChange(id, ev.target.checked)}
             />
-            { item[labelBy] }
+            { render ? render(item) : item[labelBy] }
           </label>
         </li>
       ) }

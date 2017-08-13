@@ -7,8 +7,12 @@ import Maybe from 'folktale/maybe';
 import List from './List';
 import Overview from './Overview';
 import Grid from './Grid';
-import { asBooleanMap, indexBy, prepare, selectionMapFrom } from '../models';
-import { overviewOptions } from '../constants';
+import { getOrElse } from '../utils';
+import { indexBy, prepare, selectionMapFrom } from '../models';
+import {
+  overviewOptions,
+  colorScale
+} from '../constants';
 import {
   setFilter,
   setFilterAll
@@ -23,7 +27,7 @@ const isSelected = prop('selected')
 const mapStateToProps = state => ({
   isLoading:          state.data.isLoading,
   hasData:            state.data.hasData,
-  datasets:           state.data.datasets,
+  datasets:           getOrElse(state.data.datasets, 'byId', {}),
   donorIds:           state.data.donorIds,
   epirrIds:           state.data.epirrIds,
   assays:             state.data.assays,
@@ -125,12 +129,13 @@ class App extends Component {
     const onChangeOverview = option =>
       this.setState({ selectedOverview: option })
 
-    const createList = (title, key, labelBy) =>
+    const createList = (title, key, labelBy, render) =>
       <List
         title={title}
         folded={this.state.visiblePanel !== key}
         data={this.props[key]}
         labelBy={labelBy}
+        render={render}
         onChange={toggleValueHandler(key)}
         onToggle={togglePanelHandler(key)}
         onToggleAll={toggleAllHandler(key)}
@@ -160,7 +165,14 @@ class App extends Component {
         <div className='App__right'>
           { createList('Epirr ID', 'epirrIds', 'label') }
           { createList('Donor ID', 'donorIds', 'label') }
-          { createList('Track Hubs', 'institutions', 'name') }
+          { createList('Track Hubs', 'institutions', undefined, item => 
+            <span>
+              <span
+                className='color-drop'
+                style={{ backgroundColor: colorScale(item.id) }} />
+              { item.name }
+            </span>
+          ) }
           { createList('Assay Categories', 'assayCategories', 'name') }
           { createList('Cell Types', 'cellTypeCategories', 'name') }
           { createList('Other Settings', 'otherSettings', 'label') }
