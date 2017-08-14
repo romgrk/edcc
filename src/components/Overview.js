@@ -102,6 +102,14 @@ class Overview extends React.Component {
       .append('g')
         .attr('transform', `translate(${width / 2}, ${height / 2})`)
 
+    svg.append('text')
+      .style('text-anchor', 'middle')
+      .attr('dy', '.35em')
+      .attr('dx', '.35em')
+      .attr('fill', '#fff')
+      .attr('font-size', '24px')
+      .text(selectedSets.length)
+
     svg.append('g')
       .attr('class', 'content')
 
