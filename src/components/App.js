@@ -163,6 +163,7 @@ class App extends Component {
         </div>
         <div className='App__right'>
           { createList('Epirr ID', 'epirrIds', 'label') }
+          { createList('Donor ID', 'donorIds', 'label') }
           { createList('Institutions', 'institutions', item => 
             <span>
               <span
