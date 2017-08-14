@@ -113,7 +113,7 @@ class Grid extends React.Component {
               distinctAssays.map(id =>
                 <th key={id}
                     onClick={() => selectColumn(id)} >
-                  { assays[id].name }
+                  <span>{ assays[id].name }</span>
                 </th>)
             }
           </tr>

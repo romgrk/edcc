@@ -170,12 +170,6 @@ button:disabled {
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.Grid tr:first-of-type th {
-  white-space: nowrap;
-  max-width: 1em;
-  height: 100px;
-  transform: rotate(-70deg) translate(-40px, 10px);
-}
 .Grid tr {
   background-color: var(--bg-hover);
 }
@@ -185,13 +179,33 @@ button:disabled {
   border: 1px solid transparent;
   cursor: pointer;
 }
+.Grid tr:first-of-type th {
+  white-space: nowrap;
+  max-width: 1em;
+  height: 100px;
+  position: relative;
+}
+.Grid tr:first-of-type th > span {
+  display: inline-block;
+  max-width: 1em;
+  height: 100px;
+  white-space: nowrap;
+  transform: rotate(-70deg) translate(-35px, 55px);
+  pointer-events: none;
+}
 .Grid td:first-of-type {
-  max-width: 200px;
+  max-width: 500px;
   text-align: right;
-  font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.Grid tr:first-of-type th, .Grid td:first-of-type {
+  cursor: pointer;
+  font-weight: bold;
+}
+.Grid tr:first-of-type th:hover, .Grid td:first-of-type:hover {
+  color: red;
 }
 .Grid td:not(:first-of-type) {
   position: relative;
