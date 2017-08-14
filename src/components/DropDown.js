@@ -45,7 +45,7 @@ export default class DropDown extends React.Component {
         </button>
         <div className='DropDown__content'>
           { options.map((option, i) =>
-            <div className='DropDown__item'
+            <div className='DropDown__item' key={option.value}
                 onClick={() => (this.hidePopup(), onChange(option, i))}>
               { option.label }
             </div>
