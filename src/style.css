@@ -9,6 +9,8 @@ html, body, #root, .App {
   --border: #1b1f20;
   --default-pading: 1em;
 
+  font-family: sans-serif;
+
   color: #ddd;
   /*color: #eeeeec;*/
 
@@ -140,6 +142,11 @@ button:disabled {
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: var(--bg-dark);
+}
+@media (min-width: 800px) {
+  .App__right {
+    flex: 0 0 500px;
+  }
 }
 
 .Grid {

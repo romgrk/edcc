@@ -49,7 +49,7 @@ class Overview extends React.Component {
 
   update() {
     const width  = this.node.clientWidth
-    const height = 150
+    const height = 300
     const radius = (Math.min(width, height) / 2) - 20
     const minVisibleAngle = 0.5
 
@@ -73,24 +73,13 @@ class Overview extends React.Component {
     while (this.node.firstElementChild)
       this.node.removeChild(this.node.firstElementChild)
 
-    const svg = d3.select(this.node)
-      .append('svg')
-      .attr('shape-rendering', 'geometricPrecision')
-      .attr('width', width)
-      .attr('height', height)
-      .append('g')
-        .attr('transform', `translate(${width / 2}, ${height / 2})`)
-
-    svg.append('g')
-      .attr('class', 'slices')
-    svg.append('g')
-      .attr('class', 'labels')
-    svg.append('g')
-      .attr('class', 'counts')
-
     const arc = d3.arc()
       .innerRadius(radius - 30)
       .outerRadius(radius)
+
+    const arcOver = d3.arc()
+      .innerRadius(radius - 25)
+      .outerRadius(radius + 5)
 
     const labelArc = d3.arc()
       .innerRadius(radius)
@@ -100,29 +89,59 @@ class Overview extends React.Component {
       .value(d => d.value)
       .sort(null)
 
-    const slices = svg.select('.slices')
-      .selectAll('path')
-      .data(pie(data))
-
-    slices.enter()
-      .append('path')
-      .attr('d', arc)
-      .attr('fill', d => colorScale(d.data.id))
-
     const opacity = d => {
       const diff = d.endAngle - d.startAngle
       return (diff < minVisibleAngle) ? 0 : 1
     }
 
-    const labels = svg.select('.labels')
-      .selectAll('text')
-      .data(pie(data))
+    const svg = d3.select(this.node)
+      .append('svg')
+      .attr('shape-rendering', 'geometricPrecision')
+      .attr('width', width)
+      .attr('height', height)
+      .append('g')
+        .attr('transform', `translate(${width / 2}, ${height / 2})`)
 
-    labels.enter()
+    svg.append('g')
+      .attr('class', 'content')
+
+    const content = svg.select('.content')
+      .selectAll('g')
+      .data(pie(data))
+      .enter()
+      .append('g')
+      .on('mouseover', function() {
+        d3.select(this)
+          .attr('font-weight', 'bold')
+
+        d3.select(this)
+          .selectAll('path')
+          .transition().duration(500)
+          .attr('d', arcOver);
+      })
+      .on('mouseout', function() {
+        d3.select(this)
+          .attr('font-weight', '')
+
+        d3.select(this)
+          .selectAll('path')
+          .transition().duration(500)
+          .attr('d', arc);
+      })
+
+    content
+      .append('path')
+        .attr('d', arc)
+        .attr('fill', d => colorScale(d.data.id))
+
+    content
+      .append('svg:title')
+        .text(d => `${d.data.label} (${d.data.value})`)
+
+    content
       .append('text')
       .attr('transform', (d) => {
         const pos = labelArc.centroid(d)
-        //pos[0]  = radius * (midAngle(d) < Math.PI ? 1 : -1)
         return 'translate(' + pos + ')'
       })
       .style('text-anchor', (d) =>
@@ -134,11 +153,7 @@ class Overview extends React.Component {
       .attr('fill', d => colorScale(d.data.id))
       .text(d => d.data.label)
 
-    const counts = svg.select('.counts')
-      .selectAll('text')
-      .data(pie(data))
-
-    counts.enter()
+    content
       .append('text')
       .attr('transform', (d) => {
         const pos = arc.centroid(d)
