@@ -129,12 +129,11 @@ class App extends Component {
     const onChangeOverview = option =>
       this.setState({ selectedOverview: option })
 
-    const createList = (title, key, labelBy, render) =>
+    const createList = (title, key, render) =>
       <List
         title={title}
         folded={this.state.visiblePanel !== key}
         data={this.props[key]}
-        labelBy={labelBy}
         render={render}
         onChange={toggleValueHandler(key)}
         onToggle={togglePanelHandler(key)}
@@ -164,8 +163,7 @@ class App extends Component {
         </div>
         <div className='App__right'>
           { createList('Epirr ID', 'epirrIds', 'label') }
-          { createList('Donor ID', 'donorIds', 'label') }
-          { createList('Track Hubs', 'institutions', undefined, item => 
+          { createList('Institutions', 'institutions', item => 
             <span>
               <span
                 className='color-drop'

@@ -42,7 +42,7 @@ export default (props) => {
               checked={item.selected}
               onChange={ev => onChange(id, ev.target.checked)}
             />
-            { render ? render(item) : item[labelBy] }
+            { typeof render === 'function' ? render(item) : item[render] }
           </label>
         </li>
       ) }
